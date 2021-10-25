@@ -75,6 +75,9 @@ a{
             Classes 
 *************************************************/
 
+
+
+/*Appstore and Playstore Icons*/
 .downloadbuttons{
     margin:0 auto;
     width:100%;
@@ -88,24 +91,21 @@ a{
     text-decoration: none;
 }
 
-.appleapp{
-    width: 16rem;
+.appstore{
+    width:22rem;
+    object-fit: scale-down;
 }
 
-.googleapp{
-    width: 14rem;
+.appstore img{
+    text-align: center;
+    margin:auto;
+    width: 80%;
 }
 
-.appleapp img{
-    max-width: 100%;
-    height: auto;
-}
+/*Desktop Versions*/
 
-.googleapp img{
-    max-width: 100%;
-    height: auto;
-}
 
+/*All images and their containers*/
 .imgcontainer{
     text-align: center;
     margin:auto;
@@ -133,6 +133,13 @@ a{
     margin:2rem;
 }
 
+/*desktop versions*/
+@media (min-width: 600px){
+    .imgcontainer{
+        width: 70%;
+    }
+}
+
 
 
 /* Padding and Margin Classes */
@@ -149,6 +156,7 @@ a{
     margin-bottom: 4rem;
 }
 
+/*Desktop versions*/
 @media (min-width: 600px){
     .smallvpadding{
         padding: 4rem 0;
