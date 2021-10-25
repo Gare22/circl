@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="39.909477mm"
+   height="39.909477mm"
+   viewBox="0 0 39.909477 39.909477"
+   version="1.1"
+   id="svg10446"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="appicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10448"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.74118967"
+     inkscape:cx="404.0801"
+     inkscape:cy="315.03407"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10443">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipath_lpe_path-effect2735">
+      <path
+         id="path2737"
+         style="display:none;fill:#000000;fill-opacity:1;stroke-width:0.305215"
+         d="m 190.75714,-1291.0966 v 14.3965 a 28.825423,28.825423 0 0 0 -28.63908,28.8179 28.825423,28.825423 0 0 0 28.82562,28.8257 28.825423,28.825423 0 0 0 28.79928,-28.1193 h 16.44912 v -43.9208 z" />
+      <path
+         id="lpe_path-effect2735"
+         style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.305215"
+         class="powerclip"
+         d="m 144.6242,-1293.309 h 91.568 v 91.5679 h -91.568 z m 46.13294,2.2124 v 14.3965 a 28.825423,28.825423 0 0 0 -28.63908,28.8179 28.825423,28.825423 0 0 0 28.82562,28.8257 28.825423,28.825423 0 0 0 28.79928,-28.1193 h 16.44912 v -43.9208 z" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect2735"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(17.812912,-65.004395)">
+    <rect
+       style="display:inline;fill:#3182e7;fill-opacity:1;stroke-width:0.111258"
+       id="rect25255-2-3"
+       width="39.909477"
+       height="39.909477"
+       x="-17.812912"
+       y="65.004395"
+       ry="10.189654"
+       inkscape:label="CirclBlueBG" />
+    <g
+       id="g25265-7-4"
+       inkscape:label="CirclCDot"
+       style="display:inline"
+       transform="matrix(0.42050396,0,0,0.42050396,-77.677126,609.72631)">
+      <path
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583"
+         id="path25261-8-5"
+         clip-path="url(#clipath_lpe_path-effect2735)"
+         transform="translate(1.0795556,1.2471959)"
+         inkscape:path-effect="#path-effect2735"
+         sodipodi:type="arc"
+         sodipodi:cx="190.4082"
+         sodipodi:cy="-1247.525"
+         sodipodi:rx="40.784"
+         sodipodi:ry="40.783951"
+         inkscape:label="CirclC"
+         d="m 231.1922,-1247.525 a 40.784,40.783951 0 0 1 -40.784,40.7839 40.784,40.783951 0 0 1 -40.784,-40.7839 40.784,40.783951 0 0 1 40.784,-40.784 40.784,40.783951 0 0 1 40.784,40.784 z" />
+      <circle
+         style="fill:#f2f2f2;fill-rule:evenodd;stroke-width:0.264583"
+         id="circle25263-0-9"
+         cx="219.23358"
+         cy="-1275.6362"
+         r="8.7457933"
+         inkscape:label="CirclDot" />
+    </g>
+  </g>
+</svg>

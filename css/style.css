@@ -1,0 +1,232 @@
+
+
+
+/*
+Specificity Hierarchy
+
+Inline styles - 1000 points
+IDs - 100 points
+Classes, attributes, and pseudo-classes - 10 points
+Elements and pseudo-elements - 1 point
+
+Highest point value is applied.
+
+Consider the following:
+
+<div id="content">
+    <h1>HEADING</h1>
+</div>
+
+h1 {color:red} - 1 point
+.big h1 {color:yellow} - 11 points
+#content h1 {color:green} - 101 points
+
+because #content h1 has the highest score,
+  the h1 will be colored green
+
+*/
+
+
+/*************************************************
+            Elements
+**************************************************/
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    margin:0;
+    font-size: 1.5rem;
+    font-family: "Helvetica", "Arial", sans-serif;
+    box-sizing: border-box;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+
+p{
+    margin: 0.5rem 2rem;
+    line-height: 2;
+}
+
+h4{
+    margin: 0.5rem 2rem;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/************************************************
+            Classes 
+*************************************************/
+
+.downloadbuttons{
+    margin:0 auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadbuttons a{
+    text-decoration: none;
+}
+
+.appleapp{
+    width: 16rem;
+}
+
+.googleapp{
+    width: 14rem;
+}
+
+.appleapp img{
+    max-width: 100%;
+    height: auto;
+}
+
+.googleapp img{
+    max-width: 100%;
+    height: auto;
+}
+
+.imgcontainer{
+    text-align: center;
+    margin:auto;
+    width: 80%;
+}
+
+.imgcontainer img{
+    max-width: 100%;
+    height: auto;
+}
+
+.smallimg{
+    text-align: center;
+    margin:auto;
+    width: 8%;
+}
+
+.smallimg img{
+    max-width: 100%;
+    height: auto;
+}
+
+.icon{
+    color:whitesmoke;
+    margin:2rem;
+}
+
+.smallpadding{
+    padding: 2rem 0;
+}
+
+/************************************************
+    TOP DOWN STRUCTURE HERE (ID'd elements)
+*************************************************/
+
+#intro{
+    height: 100vh;
+    background-color: rgb(66, 132, 219);
+    color:whitesmoke;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5% 20% 2.5% 20% 5% 10% 2.5% 10% 10% 10%;
+    grid-template-areas: 
+    ". . ."
+    ". logo ."
+    ". . ."
+    ". subtitle ."
+    ". . ."
+    ". buttons ."
+    ". . ."
+    ". avail ."
+    ". . ."
+    ". arrow .";
+}
+
+#logo{
+    grid-area:logo;
+    max-width: 30rem;
+}
+
+#subtitle{
+    grid-area: subtitle;
+}
+
+#introbuttons{
+    grid-area: buttons;
+}
+
+#available{
+    grid-area: avail;
+}
+
+#arrow{
+    grid-area: arrow;
+}
+
+#navbar{
+    height: 5rem;
+    background-color: rgb(180, 192, 209);
+    margin:0 auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    box-shadow: 0px 3px 12px rgba(17, 17, 17, 0.8);
+}
+#mainnav{
+    width: 100%;;
+}
+#navlogo{
+    height: 80%;
+    width: 80%;
+}
+
+#navlogo img{
+    height: 100%;
+}
+
+#mobilelinks{
+    display:none;
+}
+
+#details{
+    color:rgb(32, 32, 32);
+    background-color: whitesmoke;
+}
+
+#footer{
+    background-color: rgb(66, 132, 219);
+    color: whitesmoke;
+    height: 6rem;
+}
+
+#footlinks{
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    max-width: 30rem;
+    justify-content: space-between;
+}
+
+#footer a:hover{
+    color:whitesmoke;
+}
+
+

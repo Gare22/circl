@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg115420"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="downarrow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview115422"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74118967"
+     inkscape:cx="396.6596"
+     inkscape:cy="452.65067"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs115417">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath21574">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect21576"
+         width="44.264423"
+         height="23.917068"
+         x="262.96259"
+         y="-881.36176"
+         transform="rotate(135)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath21574-4">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect21576-7"
+         width="44.264423"
+         height="23.917068"
+         x="262.96259"
+         y="-881.36176"
+         transform="rotate(135)" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g21580"
+       inkscape:label="DownArrowCircle"
+       style="display:inline"
+       transform="translate(-194.78111,935.97837)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path8981"
+         cx="284.0239"
+         cy="-882.78967"
+         r="27.486778" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect17185"
+         width="22.846155"
+         height="22.846155"
+         x="410.95862"
+         y="813.13391"
+         transform="rotate(-135,-1.4046918,-3.391226)"
+         sodipodi:type="rect"
+         clip-path="url(#clipPath21574)"
+         d="m 410.95862,813.13391 h 22.84615 v 22.84616 h -22.84615 z" />
+    </g>
+  </g>
+</svg>
