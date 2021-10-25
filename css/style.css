@@ -37,11 +37,19 @@ html{
     -webkit-tap-highlight-color: transparent;
 }
 
+
+
 body{
     margin:0;
     font-size: 1.5rem;
     font-family: "Helvetica", "Arial", sans-serif;
     box-sizing: border-box;
+}
+
+@media (min-width: 768px){
+    body{
+        font-size:2.0rem;
+    }   
 }
 
 div{
@@ -143,6 +151,7 @@ a{
 
 #intro{
     height: 100vh;
+    min-height: -webkit-fill-available;
     /*background-color: rgb(66, 132, 219);*/
     background: rgb(6,0,107);
     background: linear-gradient(0deg, rgba(6,0,107,1) 0%, rgba(7,122,250,1) 46%, rgba(196,243,252,1) 100%);
