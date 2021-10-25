@@ -181,7 +181,7 @@ a{
     margin: auto;
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 5% 20% 2.5% 20% 5% 10% 2.5% 10% 10% 10%;
+    grid-template-rows: 5% 20% 2.5% 20% 5% 10% 2.5% 5% 10% 5% 15%;
     grid-template-areas: 
     ". . ."
     ". logo ."
@@ -192,7 +192,8 @@ a{
     ". . ."
     ". avail ."
     ". . ."
-    ". arrow .";
+    ". arrow ."
+    ". . .";
 }
 
 #logo{
