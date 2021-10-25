@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circl | A Modern Social Platform</title>
+    
+    <!--Icons-->
+    <link rel="icon" href="images/appicon.ico">
+    
+    <!--Stylsheets-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="intro" class="">
+    <div id="logo" class="imgcontainer">
+        <img src="images/circllogo2.svg" alt="Circl Logo">
+    </div>
+    <p id="subtitle">A social platform for ______ interactions. _____ _ _____ _____ ____ ____ and download Circl now!</p>
+    <div id="introbuttons" class="downloadbuttons smallpadding">
+        <a href="https://www.apple.com/">
+            <div class="appleapp">
+                <img  src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="apple icon">
+            </div>
+        </a>
+        <a href="https://play.google.com/">
+            <div class="googleapp">
+                <img  src="images/google-play-badge2.png" alt="play icon">
+            </div>
+        </a>
+    </div>
+    <p id="available">Available on iOS & Android</p>
+    <div id="arrow" class="smallimg">
+        <a href="#navbar">
+            <img src="images/downarrow.png" alt="Down Arrow">
+        </a>
+    </div>
+</div>
+<div id="navbar">
+    <div id="navlogo">
+        <img src="images/circllogo.svg" alt="Circl Logo">
+    </div>
+
+    <a href="javascript:void(0);" id="mobilebutton" class="icon" onclick="mobileMenu()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="mobilelinks">
+        <h1>Coming Soon</h1>
+    </div>
+</div>
+<div id="details" class="smallpadding">
+    <div class="imgcontainer">
+        <img src="images/demoimg.png" alt="demonstration images">
+    </div>
+    <h4>Circle Keeps you in the Loop</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+    <div class="imgcontainer">
+        <img src="images/demoimg.png" alt="demonstration images">
+    </div>
+    <h4>Circle Keeps you in the Loop</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    <div class="downloadbuttons">
+        <a href="https://www.apple.com/">
+            <div class="appleapp">
+                <img  src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="apple icon">
+            </div>
+        </a>
+        <a href="https://play.google.com/">
+            <div class="googleapp">
+                <img  src="images/google-play-badge2.png" alt="play icon">
+            </div>
+        </a>
+    </div>
+</div>
+<div id="footer">
+    <div id="footlinks" class="smallpadding">    
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/privacy-policy">Terms</a>
+        <a href="/privacy-policy">Copyright</a>
+    </div>
+</div>
+</body>
+
+<script>
+    function mobileMenu() {
+      var x = document.getElementById("mobilelinks");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+</script>
+
+</html>
