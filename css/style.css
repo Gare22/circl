@@ -135,7 +135,10 @@ a{
 
 #intro{
     height: 100vh;
-    background-color: rgb(66, 132, 219);
+    /*background-color: rgb(66, 132, 219);*/
+    background: rgb(6,0,107);
+    background: linear-gradient(0deg, rgba(6,0,107,1) 0%, rgba(7,122,250,1) 46%, rgba(196,243,252,1) 100%);
+
     color:whitesmoke;
     align-content: center;
     justify-content: center;
@@ -213,7 +216,9 @@ a{
 }
 
 #footer{
-    background-color: rgb(66, 132, 219);
+    /*background-color: rgb(66, 132, 219);*/
+    background-color: rgb(180, 192, 209);
+    
     color: whitesmoke;
     height: 6rem;
 }
