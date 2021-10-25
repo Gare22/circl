@@ -133,6 +133,10 @@ a{
     margin:2rem;
 }
 
+
+
+/* Padding and Margin Classes */
+
 .smallvpadding{
     padding: 2rem 0;
 }
@@ -143,6 +147,20 @@ a{
 
 .smallbotmarg{
     margin-bottom: 4rem;
+}
+
+@media (min-width: 768px){
+    .smallvpadding{
+        padding: 4rem 0;
+    }
+    
+    .smallpadding{
+        padding: 2rem;
+    }
+    
+    .smallbotmarg{
+        margin-bottom: 8rem;
+    }
 }
 
 /************************************************
@@ -234,19 +252,26 @@ a{
     padding:8rem 0rem 1rem 0rem;
 }
 
+@media (min-width: 768px){
+    #details{
+        padding:8rem 25vw 2rem 25vw;
+    }   
+}
+
 #footer{
     /*background-color: rgb(66, 132, 219);*/
     background-color: rgb(238, 238, 238);
     box-shadow: 0px 3px 12px rgba(17, 17, 17, 0.8);
     color: rgb(49, 130, 231);
     height: 6rem;
+    padding: 2rem 0;
 }
 
 #footlinks{
     margin: 0 auto;
     display: flex;
     width: 80%;
-    max-width: 30rem;
+    max-width: 40rem;
     justify-content: space-between;
 }
 
