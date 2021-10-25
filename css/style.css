@@ -112,6 +112,7 @@ a{
     text-align: center;
     margin:auto;
     width: 8%;
+    max-width: 10rem;
 }
 
 .smallimg img{
