@@ -92,24 +92,18 @@ a{
 }
 
 .appstore{
-    height: 3.4rem;
+    width:22rem;
     object-fit: scale-down;
-    padding: 2rem;
 }
 
 .appstore img{
     text-align: center;
     margin:auto;
-    height: inherit;
-    width: auto;
+    width: 80%;
 }
 
 /*Desktop Versions*/
-@media (min-width: 600px){
-    .appstore{
-        height: 8rem;
-    }
-}
+
 
 /*All images and their containers*/
 .imgcontainer{
