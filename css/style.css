@@ -67,6 +67,7 @@ h4{
 }
 
 a{
+    box-sizing: border-box;
     text-decoration: none;
     color:inherit;
 }
@@ -184,10 +185,24 @@ a{
 #intro{
     height: 100vh;
     min-height: 60rem;
-    /*background-color: rgb(66, 132, 219);*/
+
+    /*solid beige*/
+    /*background-color: rgb(156,140,108);*/
+
+    /*solid lighter beige
+    rgb(156,140,108)*/
+
+    /*solid green
+    rgb(180,213,145)*/
+    
+
+    /*solid blue*/
+    background-color: rgb(89, 160, 252);
+
+    /*gradient blue
     background: rgb(6,0,107);
     background: linear-gradient(0deg, rgba(6,0,107,1) 0%, rgba(7,122,250,1) 46%, rgba(196,243,252,1) 100%);
-
+    */
     color:whitesmoke;
     align-content: center;
     justify-content: center;
@@ -232,6 +247,8 @@ a{
 }
 
 #navbar{
+    /*logo blue
+    color: rgb(49, 130, 231);*/
     color: rgb(49, 130, 231);
     background-color: rgb(238, 238, 238);
     margin:0 auto;
@@ -268,7 +285,28 @@ a{
 }
 
 #mobilelinks{
+    flex-direction: column;
+    width: 100%;
     display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobilelinks a{
+    text-align: center;
+    background-color: rgb(49, 130, 231);
+    padding:2rem;
+    width: 100%;
+    width: 100%;
+    color:whitesmoke;
+}
+
+#mobilelinks a:hover{
+    padding:2rem;
+    width: 100%;
+    background-color: rgb(194, 194, 194);
+    width: 100%;
+    color:rgb(49, 130, 231);
 }
 
 #details{
@@ -276,7 +314,7 @@ a{
     background-color: whitesmoke;
     padding:8rem 0rem 1rem 0rem;
 }
-
+/*Desktop Versions*/
 @media (min-width: 600px){
     #details{
         padding:8rem 25vw 2rem 25vw;
