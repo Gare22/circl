@@ -14,21 +14,25 @@ html{
 html, body{
     margin:0;
     padding:0;
+    background-color: whitesmoke;
 }
 
-p{
+p, img, a{
     font-size:1.6rem;
 }
 
 a{ 
-    font-size:1.6rem;
     text-decoration: none;
     color:rgb(43, 43, 43);
 }
 
+div{
+    box-sizing: border-box;
+}
+
 
 @media (min-width: 600px){
-    p, a{
+    p, a, img{
         font-size:2rem;
     }  
 }
@@ -40,31 +44,98 @@ a{
     position: sticky;
     top: 0;
     height: 6rem;
+    width: 100%;
 }
 
 .l-front{
-    height: 100vh;
-    padding: 0px 0px;
+    height: calc(100vh - 60px);
+    padding: 0px 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 
 @media screen and (min-width:600px) {
     .l-front{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
+.l-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.l-footer{
+    display: flex;
+    width: 100%;
+}
 
 
 /*************************************************
             Modules
 **************************************************/
-
-.downloadbutton{
-    width: 10rem;
+.navlogo{
+    float:left;
+    margin-right:2rem
+}
+.navlinks{
+    display: flex;
+    flex-direction: column;
 }
 
+.navlinks a{
+    background-color: gray;
+    width: 100%;
+    height: 5rem;
+    display:none;
+}
+
+.navlinks a:hover{
+    background-color: rgb(36, 36, 36);
+    color:whitesmoke;
+}
+
+.navlinks a{
+    background-color: gray;
+    width: 100%;
+    height: 5rem;
+    display:none;
+}
+
+.downloadbuttons{
+    width: 80%;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+}
+
+.downloadbutton{
+    height: 10vw;
+    width: auto;
+    margin:auto;
+}
+
+.downloadbutton img{
+    text-align: center;
+    margin:auto;
+    height: inherit;
+}
+@media screen and (min-width:600px) {
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navlinks a{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 5rem;
+    }
+}
 /*************************************************
             States
 **************************************************/
@@ -80,6 +151,9 @@ a{
 /*************************************************
             Themes
 **************************************************/
+.nav-theme{
+    background-color: whitesmoke;
+}
 
 .shadow{
     box-shadow: 0px 0px 1rem .2rem black;
