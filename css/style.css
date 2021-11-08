@@ -7,7 +7,18 @@ Description: Main style sheet for circl landing page. Attempts to follow
 /*************************************************
             Elements
 **************************************************/
+html{
+    font-size:10px;
+}
 
+html, body{
+    margin:0;
+    padding:0;
+}
+
+p{
+    font-size:2rem;
+}
 
 
 /*************************************************
