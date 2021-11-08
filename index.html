@@ -14,23 +14,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div id="navbar">
+<div id="navbar" class="l-nav shadow">
     <div id="mainnav">
         <div id="navlogo">
             <img src="images/circllogo.svg" alt="Circl Logo">
         </div>
-    
-        <a href="javascript:void(0);" id="mobilebutton" class="icon" onclick="mobileMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <div id="mobilelinks">
-        <a href="./copyright">Copyright</a>
-        <a href="./terms">Terms and Conditions</a>
-        <a href="./privacy">Privacy Policy</a>
+        <div class="navlinks">
+            <a href="./terms">Terms</a>
+            <a href="./privacy">Privacy</a>
+            <a href="./business">Businesses</a>
+            <a href="./contact">Contact Us</a>    
+            <a href="javascript:void(0);" id="mobilebutton" class="is-mobile" onclick="mobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
 </div>
-<div id="intro" class="">
+<div id="front" class="l-front">
     <p id="subtitle">A social platform for ______ interactions. _____ _ _____ _____ ____ ____ and download Circl now!</p>
     <div id="introbuttons" class="">
         <a href="https://www.apple.com/">
@@ -51,7 +51,7 @@
         </a>
     </div>
 </div>
-<div id="details" class="smallvpadding">
+<div id="details" class="l-body">
     <div class="imgcontainer smallbotmarg">
         <img src="images/demoimg.png" alt="demonstration images">
     </div>
@@ -71,13 +71,13 @@
         </a>
         <a href="https://play.google.com/">
             <div class="appstore">
-                <img src="images/google-play-badge2.png" alt="play icon">
+                <img src="images/google-play-badge.png" alt="play icon">
             </div>
         </a>
     </div>
 </div>
-<div id="footer">
-    <div id="footlinks">    
+<div id="footer" class="l-foot">
+    <div class="horlinks">    
         <a href="./privacy">Privacy</a>
         <a href="./terms">Terms</a>
         <a href="./copyright">Copyright</a>

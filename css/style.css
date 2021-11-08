@@ -17,13 +17,43 @@ html, body{
 }
 
 p{
-    font-size:2rem;
+    font-size:1.6rem;
 }
 
+a{ 
+    font-size:1.6rem;
+    text-decoration: none;
+    color:rgb(43, 43, 43);
+}
+
+
+@media (min-width: 600px){
+    p, a{
+        font-size:2rem;
+    }  
+}
 
 /*************************************************
             Layouts
 **************************************************/
+.l-nav{
+    position: sticky;
+    top: 0;
+    height: 6rem;
+}
+
+.l-front{
+    height: 100vh;
+    padding: 0px 0px;
+}
+
+
+@media screen and (min-width:600px) {
+    .l-front{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
 
 
 
@@ -31,16 +61,26 @@ p{
             Modules
 **************************************************/
 
-
+.downloadbutton{
+    width: 10rem;
+}
 
 /*************************************************
             States
 **************************************************/
 
 
+@media screen and (min-width:600px) {
+    .is-mobile{
+        display:none;
+    }
+}
+
 
 /*************************************************
             Themes
 **************************************************/
 
-
+.shadow{
+    box-shadow: 0px 0px 1rem .2rem black;
+}
