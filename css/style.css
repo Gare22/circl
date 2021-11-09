@@ -14,17 +14,16 @@ html{
 html, body{
     margin:0;
     padding:0;
-    background-color: whitesmoke;
+    background-color: #F5F5F5;
 }
 
 p, img, a{
     font-size:1.6rem;
+    text-decoration: none;
+    color:#252525;
+    box-sizing: border-box;
 }
 
-a{ 
-    text-decoration: none;
-    color:rgb(43, 43, 43);
-}
 
 div{
     box-sizing: border-box;
@@ -41,9 +40,9 @@ div{
             Layouts
 **************************************************/
 .l-nav{
-    position: sticky;
+    position: fixed;
     top: 0;
-    height: 6rem;
+    min-height: 6rem;
     width: 100%;
 }
 
@@ -78,36 +77,78 @@ div{
 /*************************************************
             Modules
 **************************************************/
-.navlogo{
-    float:left;
-    margin-right:2rem
+
+
+/*Navbar*/
+.logo-and-button{
+    width:100%;
+    min-height: 6rem;
 }
+
+.navlogo{
+    width: 50%;
+    float:left;
+}
+
+.navicon{
+    width: 50%;
+    float:left;
+    text-align: right;
+}
+
 .navlinks{
-    display: flex;
+    width: 100%;
+    float:left;
+    min-height: 6rem;
+    display: none;
     flex-direction: column;
-    background-color: green;
+    background-color: inherit;
+}
+
+.navlinks.mobilebutton-is-pressed{
+    display:flex;
 }
 
 .navlinks a{
     width: 100%;
     height: 6rem;
-    background-color: green;
-}
-
-.navlinks a:hover{
-    background-color: rgb(36, 36, 36);
-    color:whitesmoke;
-}
-
-.navlinks a.icon{
-    float:right;
-    background-color: whitesmoke;
+    background-color: #F5F5F5;
 }
 
 .navlinks a.is-active{
     background-color: #b7d894;       
 }
 
+
+@media (min-width:600px) {
+    .logo-and-button{
+        width:40%;
+        min-height: 6rem;
+    }
+    
+    .navlinks{
+        width: 60%;
+        float:right;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navlinks a{
+        background-color: rgb(0,0,0,0);
+        height: 5rem;
+    }
+
+    .navlinks a:hover{
+        color:#4b8fe2;
+    }
+
+    .navlinks a.is-active{
+        background-color: rgb(0,0,0,0);
+        color:#b7d894;       
+    }
+}
+
+/*Download Buttons*/
 .downloadbuttons{
     width: 100%;
     display: flex;
@@ -127,31 +168,16 @@ div{
     margin:auto;
     height: inherit;
 }
-@media (min-width:600px) {
-    .navlinks{
-        display: flex;
-        flex-direction: row;
-    }
 
-    .navlinks a{
-        height: 5rem;
-    }
-}
+
 /*************************************************
-            States
+            States (not directly related to a module)
 **************************************************/
-
 @media (min-width:600px) {
     
     /*class is-mobile only displays if the device is-mobile*/
     .is-mobile{
         display:none;
-    }
-
-    .is-mobilebutton-pressed{
-        position:absolute;
-        top:0;
-        right:0;
     }
 }
 
@@ -160,9 +186,9 @@ div{
             Themes
 **************************************************/
 .nav-theme{
-    background-color: whitesmoke;
+    background-color: #F5F5F5;
 }
 
 .shadow{
-    box-shadow: 0px 0px 1rem .2rem black;
+    box-shadow: 0px 0px 1rem .2rem #6B6B6B;
 }
