@@ -20,12 +20,12 @@ html, body{
 p, img, a{
     font-size:1.6rem;
     text-decoration: none;
-    color:#252525;
     box-sizing: border-box;
 }
 
 
 div{
+    color:#252525;
     box-sizing: border-box;
 }
 

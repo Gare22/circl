@@ -17,11 +17,19 @@ html, body{
     background-color: #F5F5F5;
 }
 
-p, img, a{
+p, img, a, body{
     font-size:1.6rem;
-    text-decoration: none;
-    color:#252525;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color:#252525;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(240, 240, 240);
 }
 
 
@@ -42,20 +50,32 @@ div{
             Modules
 **************************************************/
 
-.l-header{
+.l-navbar{
     position:fixed;
     top:0;
     left:0;
     min-height: 6rem;
     width: 100%;
-    background-color: rgb(236, 236, 236);
+    background-color: #4b8fe2;
+    color:whitesmoke;
     box-shadow: 0px 0px 10px rgb(46, 46, 46);
     display: grid;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 7rem;
 }
 
 .l-nav-links{
     display:none;
+}
+
+.mobile-nav-button{
+    justify-self:right;
+    align-self: center;
+    padding-right: 2rem;
+}
+
+.mobile-nav-button i{
+    font-size:5rem;
 }
 
 .l-nav-links.mobilebutton-is-pressed{
@@ -63,16 +83,40 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: #4b8fe2;
 }
 .l-nav-links a{
-    height: 6rem;
+    padding:2rem;
+    min-height: 6rem;
+}
+
+.l-nav-links a:hover{
+    color:rgb(240, 240, 240);
+}
+
+.l-nav-links a.is-active{
+    background-color: #b7d894;
 }
 
 @media (min-width:600px) {
-    .is-mobile{
-        display:none;
+    .l-navbar{
+        background-color: whitesmoke;
+        color:#4b8fe2;
+    }
+
+    .l-nav-links a{
+        color:#4b8fe2;
+    }
+
+    .l-nav-links a:hover{
+        color:rgb(24, 24, 24);
     }
     
+    .l-nav-links a.is-active{
+        border: 3px dotted #b7d894;
+        background-color: whitesmoke;
+    }
+
     .l-nav-links, .l-nav-links.mobilebutton-is-pressed{
         display: flex;
         justify-content: space-around;
@@ -88,7 +132,11 @@ div{
 /*************************************************
             States (not directly related to a module)
 **************************************************/
-
+@media (min-width:600px) {
+    .is-mobile{
+        display:none;
+    }
+}
 
 
 /*************************************************
