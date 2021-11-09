@@ -1,0 +1,97 @@
+/*Circl - style.css
+Author: Garrett Tallent
+Description: Main style sheet for circl landing page. Attempts to follow 
+            SMACSS guidelines: Elements, Layouts, Modules, States, Themes. 
+            
+
+/*************************************************
+            Elements
+**************************************************/
+html{
+    font-size:10px;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    background-color: #F5F5F5;
+}
+
+p, img, a{
+    font-size:1.6rem;
+    text-decoration: none;
+    color:#252525;
+    box-sizing: border-box;
+}
+
+
+div{
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 600px){
+    p, a, img{
+        font-size:2rem;
+    }  
+}
+
+
+
+/*************************************************
+            Modules
+**************************************************/
+
+.l-header{
+    position:fixed;
+    top:0;
+    left:0;
+    min-height: 6rem;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 10px rgb(46, 46, 46);
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+.l-nav-links{
+    display:none;
+}
+
+.l-nav-links.mobilebutton-is-pressed{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.l-nav-links a{
+    height: 6rem;
+}
+
+@media (min-width:600px) {
+    .is-mobile{
+        display:none;
+    }
+    
+    .l-nav-links, .l-nav-links.mobilebutton-is-pressed{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+
+
+/*************************************************
+            States (not directly related to a module)
+**************************************************/
+
+
+
+/*************************************************
+            Themes
+**************************************************/
+
