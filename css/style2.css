@@ -104,6 +104,10 @@ div{
         color:#4b8fe2;
     }
 
+    .mobile-nav-button{
+        display:none;
+    }
+
     .l-nav-links a{
         color:#4b8fe2;
     }
@@ -132,11 +136,6 @@ div{
 /*************************************************
             States (not directly related to a module)
 **************************************************/
-@media (min-width:600px) {
-    .is-mobile{
-        display:none;
-    }
-}
 
 
 /*************************************************
