@@ -16,10 +16,11 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<div class="l-navbar">
+<div class="l-navbar nav-theme">
     <div class="logo">
         <img src="./images/logo.png" alt="Circl Logo">
     </div>
@@ -29,16 +30,20 @@
         </a> 
     </div>
     <div id="navlinks" class="l-nav-links">
-        <a href="./" class="is-active">Home</a>
-        <a href="./terms">Terms</a>
-        <a href="./privacy">Privacy</a>
+        <a href="./" class="is-active ">Home</a>
+        <a href="./terms" class="is-mobile">Terms</a>
+        <a href="./privacy" class="is-mobile">Privacy</a>
         <a href="./business">Businesses</a>
         <a href="./contact">Contact Us</a> 
         <a href="http://onelink.to/ek4xqr" class="is-mobile">Download Now!</a>
     </div>
 </div>
-<div id="front" class="l-front">
-    <p id="subtitle">HANGING WITH YOUR FRIENDS HAS NEVER BEEN EASIER</p>
+<div id="front" class="l-front front-theme">
+    <div>
+        <h3>Hanging with your friends has never been easier</h3>
+        <h4>Try out Circl today!</h4>
+    </div>
+
     <div id="introbuttons" class="l-downloadbuttons">
         <a href="https://www.apple.com/">
             <div class="downloadbutton">
@@ -51,7 +56,7 @@
             </div>
         </a>
     </div>
-    <p id="available">Available on iOS & Android</p>
+    <h4>Available on iOS & Android</h4>
 </div>
 <div id="details" class="l-body">
     <div id="detailsbuttons" class="l-downloadbuttons">
@@ -67,13 +72,9 @@
         </a>
     </div>
 </div>
-<div id="footer" class="l-foot">
-    <div class="horlinks">    
-        <a href="./privacy">Privacy</a>
-        <a href="./terms">Terms</a>
-        <a href="./copyright">Copyright</a>
-        <a href="./support">Support</a>
-    </div>
+<div id="footer" class="l-foot foot-theme">   
+    <a href="./privacy">Privacy</a>
+    <a href="./terms">Terms</a>
 </div>
 </body>
 
@@ -87,5 +88,19 @@
             x.className = "l-nav-links";
         }
     }
+
+    
 </script>
+
+<script>
+    window.addEventListener('scroll',(e)=>{
+      const nav = document.querySelector('.nav-theme');
+      if(window.pageYOffset>0){
+        nav.classList.add("shadow");
+      }else{
+        nav.classList.remove("shadow");
+      }
+    });
+  </script>
+
 </html>

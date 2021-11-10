@@ -38,7 +38,7 @@ div{
 }
 
 
-@media (min-width: 600px){
+@media (min-width: 769px){
     p, a, img{
         font-size:2rem;
     }  
@@ -47,6 +47,8 @@ div{
 /*************************************************
             Modules
 **************************************************/
+
+/*Navbar*/
 .l-navbar{
     position:sticky;
     top:0;
@@ -55,7 +57,6 @@ div{
     width: 100%;
     background-color: #4b8fe2;
     color:whitesmoke;
-    box-shadow: 0px 0px 10px rgb(46, 46, 46);
     display: grid;
     grid-template-columns: 40% 1fr;
     grid-template-rows: 7rem;
@@ -72,6 +73,7 @@ div{
 }
 
 .mobile-nav-button i{
+    color:whitesmoke;
     font-size:5rem;
 }
 
@@ -84,6 +86,7 @@ div{
 }
 .l-nav-links a{
     padding:2rem;
+    color: whitesmoke;
     min-height: 6rem;
 }
 
@@ -92,12 +95,12 @@ div{
 }
 
 .l-nav-links a.is-active{
+    color:rgb(97, 97, 97);
     background-color: #b7d894;
 }
 
-@media (min-width:600px) {
+@media (min-width:769px) {
     .l-navbar{
-        background-color: whitesmoke;
         color:#4b8fe2;
     }
     
@@ -111,16 +114,19 @@ div{
     }
 
     .l-nav-links a{
-        color:#4b8fe2;
+        color:rgb(97, 97, 97);
+        text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+        transition: text-decoration-color 600ms, color 600ms;
     }
 
     .l-nav-links a:hover{
-        color:rgb(24, 24, 24);
+        color:#4b8fe2;
+        text-decoration-color:#4b8fe2;
     }
     
     .l-nav-links a.is-active{
-        border: 3px dotted #b7d894;
-        background-color: whitesmoke;
+        text-decoration: underline 0.15em;
+        background-color: inherit
     }
 
     .l-nav-links, .l-nav-links.mobilebutton-is-pressed{
@@ -129,11 +135,28 @@ div{
     }
 }
 
+
+/*Front Page*/
+.l-front{
+    height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+}
+
+.l-front > * {
+    width: min(90%, 769px);
+    margin: auto;
+}
+
 /*Download Buttons*/
 .l-downloadbuttons{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    gap:6%;
+    justify-content: center;
     justify-items: center;
     align-items: center;
 }
@@ -151,10 +174,16 @@ div{
 }
 
 
+.l-foot{
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+}
+
 /*************************************************
             States (not directly related to a module)
 **************************************************/
-@media (min-width:600px) {
+@media (min-width:769px) {
     
     /*class is-mobile only displays if the device is-mobile*/
     .is-mobile{
@@ -167,9 +196,42 @@ div{
             Themes
 **************************************************/
 .nav-theme{
-    background-color: #F5F5F5;
+    background-color: #3276C9;
 }
 
+.front-theme{
+    color:whitesmoke;
+    background-color: #3276C9;
+    background-image: url("../images/front.png");
+}
+
+.front-theme h4{
+    font-size: 3rem;
+}
+
+.front-theme h3{
+    font-size: 6rem;
+}
+
+.foot-theme{
+    background-color: rgb(27, 27, 27);
+    color:whitesmoke;
+}
+
+.foot-theme a{
+    color:#b7d894;
+}
+
+.foot-theme a{
+    color:whitesmoke;
+}
+
+@media (min-width:769px) {
+    .nav-theme{
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 10px rgb(46, 46, 46, 0.5);
+    }
+}
 .shadow{
-    box-shadow: 0px 0px 1rem .2rem #6B6B6B;
+    box-shadow: 0px 0px 10px rgb(46, 46, 46, 0.5);
 }
