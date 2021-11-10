@@ -1,7 +1,7 @@
 /*Circl - style.css
 Author: Garrett Tallent
 Description: Main style sheet for circl landing page. Attempts to follow 
-            SMACSS guidelines: Elements, Layouts, Modules, States, Themes. 
+            SMACSS guidelines: (Base)Elements, Layouts, Modules, States, Themes. 
             
 
 /*************************************************
@@ -17,15 +17,23 @@ html, body{
     background-color: #F5F5F5;
 }
 
-p, img, a{
+p, img, a, body{
     font-size:1.6rem;
-    text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color:#252525;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(240, 240, 240);
 }
 
 
 div{
-    color:#252525;
     box-sizing: border-box;
 }
 
@@ -37,119 +45,92 @@ div{
 }
 
 /*************************************************
-            Layouts
-**************************************************/
-.l-nav{
-    position: fixed;
-    top: 0;
-    min-height: 6rem;
-    width: 100%;
-}
-
-.l-front{
-    height: calc(100vh - 60px);
-    padding: 0px 3rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-@media (min-width:600px) {
-    .l-front{
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-}
-
-.l-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.l-footer{
-    display: flex;
-    width: 100%;
-}
-
-
-/*************************************************
             Modules
 **************************************************/
-
-
-/*Navbar*/
-.logo-and-button{
-    width:100%;
+.l-navbar{
+    position:sticky;
+    top:0;
+    left:0;
     min-height: 6rem;
-}
-
-.navlogo{
-    width: 50%;
-    float:left;
-}
-
-.navicon{
-    width: 50%;
-    float:left;
-    text-align: right;
-}
-
-.navlinks{
     width: 100%;
-    float:left;
-    min-height: 6rem;
-    display: none;
+    background-color: #4b8fe2;
+    color:whitesmoke;
+    box-shadow: 0px 0px 10px rgb(46, 46, 46);
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 7rem;
+}
+
+.l-nav-links{
+    display:none;
+}
+
+.mobile-nav-button{
+    justify-self:right;
+    align-self: center;
+    padding-right: 2rem;
+}
+
+.mobile-nav-button i{
+    font-size:5rem;
+}
+
+.l-nav-links.mobilebutton-is-pressed{
+    grid-column: span 2;
+    display: flex;
     flex-direction: column;
-    background-color: inherit;
+    justify-content: space-around;
+    background-color: #4b8fe2;
+}
+.l-nav-links a{
+    padding:2rem;
+    min-height: 6rem;
 }
 
-.navlinks.mobilebutton-is-pressed{
-    display:flex;
+.l-nav-links a:hover{
+    color:rgb(240, 240, 240);
 }
 
-.navlinks a{
-    width: 100%;
-    height: 6rem;
-    background-color: #F5F5F5;
+.l-nav-links a.is-active{
+    background-color: #b7d894;
 }
-
-.navlinks a.is-active{
-    background-color: #b7d894;       
-}
-
 
 @media (min-width:600px) {
-    .logo-and-button{
-        width:40%;
-        min-height: 6rem;
+    .l-navbar{
+        background-color: whitesmoke;
+        color:#4b8fe2;
     }
     
-    .navlinks{
-        width: 60%;
-        float:right;
-        display: flex;
-        flex-direction: row;
+    .is-mobile{
+        display:none;
+    }
+    
+    .mobile-nav-button{
+    
+        display:none;
     }
 
-    .navlinks a{
-        background-color: rgb(0,0,0,0);
-        height: 5rem;
-    }
-
-    .navlinks a:hover{
+    .l-nav-links a{
         color:#4b8fe2;
     }
 
-    .navlinks a.is-active{
-        background-color: rgb(0,0,0,0);
-        color:#b7d894;       
+    .l-nav-links a:hover{
+        color:rgb(24, 24, 24);
+    }
+    
+    .l-nav-links a.is-active{
+        border: 3px dotted #b7d894;
+        background-color: whitesmoke;
+    }
+
+    .l-nav-links, .l-nav-links.mobilebutton-is-pressed{
+        display: flex;
+        justify-content: space-around;
     }
 }
 
 /*Download Buttons*/
-.downloadbuttons{
+.l-downloadbuttons{
     width: 100%;
     display: flex;
     justify-content: space-around;
