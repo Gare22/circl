@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circl | A Modern Social Platform</title>
     
     <!--Icons-->
-    <link rel="icon" href="images/appicon.ico">
+    <link rel="icon" href="../images/appicon.ico">
     
     <!--Stylsheets-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+    <div class="l-navbar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Circl Logo">
+        </div>
+        <div class="mobile-nav-button is-mobile">
+            <a href="javascript:void(0);" onclick="mobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a> 
+        </div>
+        <div id="navlinks" class="l-nav-links">
+            <a href="../">Home</a>
+            <a href="../terms">Terms</a>
+            <a href="../privacy">Privacy</a>
+            <a href="../business">Businesses</a>
+            <a href="./"  class="is-active">Contact Us</a> 
+            <a href="http://onelink.to/ek4xqr" class="is-mobile">Download Now!</a>
+        </div>
+    </div>
+    <div class="l-body">
 
-    <h1>Contact Us Page</h1>
-
+    </div>
+    <div class="l-footer">
+        
+    </div>
 </body>
+
+<!--Navmenu Script (for mobile button)-->
+<script>
+function mobileMenu() {
+    var x = document.getElementById("navlinks");
+    if (x.className === "l-nav-links") {
+        x.className += " mobilebutton-is-pressed";
+    } else {
+        x.className = "l-nav-links";
+    }
+}
+</script>
 </html>
