@@ -117,6 +117,7 @@ div{
         color:rgb(97, 97, 97);
         text-decoration: underline 0.15em rgba(0, 0, 0, 0);
         transition: text-decoration-color 600ms, color 600ms;
+        padding-left:4rem;
     }
 
     .l-nav-links a:hover{
@@ -131,7 +132,8 @@ div{
 
     .l-nav-links, .l-nav-links.mobilebutton-is-pressed{
         display: flex;
-        justify-content: space-around;
+        justify-content: right;
+        padding-right:10rem;
     }
 }
 
