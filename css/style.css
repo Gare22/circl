@@ -174,12 +174,21 @@ div{
     margin:auto;
     height: inherit;
 }
+/*Body*/
+.l-body{
+    min-height: 100vh;
+}
 
-
+/*Footer*/
 .l-foot{
     display:flex;
     justify-content: center;
     gap:2rem;
+}
+
+/*Padding and Margins*/
+.padding-bot-5{
+    padding-bottom: 5rem;
 }
 
 /*************************************************
