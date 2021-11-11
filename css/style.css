@@ -174,16 +174,37 @@ div{
     margin:auto;
     height: inherit;
 }
+
 /*Body*/
 .l-body{
     min-height: 100vh;
 }
 
+/*Features & Screenshots*/
+.l-features{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding:10rem;
+}
+.feature{
+    background-color: orange;
+    padding:5rem;
+    text-align: center;
+}
+
+.screenshot{
+    background-color:olive;
+    padding:5rem;
+}
+
 /*Footer*/
 .l-foot{
+    min-height: 6rem;
     display:flex;
     justify-content: center;
     gap:2rem;
+    padding:2rem;
 }
 
 /*Padding and Margins*/
@@ -225,7 +246,7 @@ div{
 }
 
 .foot-theme{
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(44, 44, 44);
     color:whitesmoke;
 }
 
