@@ -28,6 +28,11 @@ a{
     text-decoration: none;
 }
 
+p, h1, h2, h3, h4, h5{
+    padding:0;
+    margin:0;
+}
+
 a:hover{
     color:rgb(240, 240, 240);
 }
@@ -182,12 +187,13 @@ div{
 
 /*Features & Screenshots*/
 .l-features{
-    display:grid;
-    grid-template-columns: 50% 50%;
     width: 100%;
     padding:10rem;
 }
 .feature{
+    display:flex;
+    justify-items: space-around;
+    justify-content: center;
     background-color: orange;
     padding:5rem;
     text-align: center;
