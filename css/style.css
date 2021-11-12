@@ -142,6 +142,26 @@ div{
     }
 }
 
+/*Body*/
+.l-body{
+    min-height: calc(100vh - 13rem);
+}
+
+/*Footer*/
+.l-foot{
+    min-height: 6rem;
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+    padding:2rem;
+}
+
+/*Padding and Margins*/
+.padding-bot-5{
+    padding-bottom: 5rem;
+}
+
+
 
 /*Front Page*/
 .l-front{
@@ -180,10 +200,6 @@ div{
     height: inherit;
 }
 
-/*Body*/
-.l-body{
-    min-height: 100vh;
-}
 
 /*Features & Screenshots*/
 .l-features{
@@ -194,7 +210,6 @@ div{
     display:flex;
     justify-items: space-around;
     justify-content: center;
-    background-color: orange;
     padding:5rem;
     text-align: center;
 }
@@ -209,8 +224,6 @@ div{
         padding: 10rem;
     }
 }
-
-
 
 /*All images and their containers*/
 .img-container{
@@ -231,19 +244,59 @@ div{
 }
 
 
-/*Footer*/
-.l-foot{
-    min-height: 6rem;
-    display:flex;
-    justify-content: center;
-    gap:2rem;
+/***Contact and Business Pages Only***/
+.l-contact{
     padding:2rem;
 }
 
-/*Padding and Margins*/
-.padding-bot-5{
-    padding-bottom: 5rem;
+.l-business{
+    padding:2rem;
 }
+
+@media (min-width: 769px){
+    .l-contact{
+        padding:10rem;
+    }
+
+    .l-business{
+        padding:10rem;
+    }
+}
+
+.form{
+    width: min(90%, 769px);
+    margin:auto;
+}
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=tel], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4b8fe2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #1674e7;
+  }
+  
 
 /*************************************************
             States (not directly related to a module)
@@ -278,17 +331,12 @@ div{
     font-size: 6rem;
 }
 
-.foot-theme{
-    background-color: rgb(44, 44, 44);
-    color:whitesmoke;
+.foot-theme a{
+    color:rgb(97, 97, 97, 0.5);
 }
 
-.foot-theme a{
+.foot-theme a:hover{
     color:#b7d894;
-}
-
-.foot-theme a{
-    color:whitesmoke;
 }
 
 @media (min-width:769px) {
