@@ -188,7 +188,7 @@ div{
 /*Features & Screenshots*/
 .l-features{
     width: 100%;
-    padding:10rem;
+    padding:2rem;
 }
 .feature{
     display:flex;
@@ -204,19 +204,12 @@ div{
     padding:5rem;
 }
 
-/*Footer*/
-.l-foot{
-    min-height: 6rem;
-    display:flex;
-    justify-content: center;
-    gap:2rem;
-    padding:2rem;
+@media (min-width: 769px){
+    .l-features{
+        padding: 10rem;
+    }
 }
 
-/*Padding and Margins*/
-.padding-bot-5{
-    padding-bottom: 5rem;
-}
 
 
 /*All images and their containers*/
@@ -231,11 +224,25 @@ div{
     height: auto;
 }
 
-/*desktop versions*/
-@media (min-width: 600px){
+@media (min-width: 769px){
     .img-container{
         width: 70%;
     }
+}
+
+
+/*Footer*/
+.l-foot{
+    min-height: 6rem;
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+    padding:2rem;
+}
+
+/*Padding and Margins*/
+.padding-bot-5{
+    padding-bottom: 5rem;
 }
 
 /*************************************************
