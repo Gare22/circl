@@ -156,13 +156,6 @@ div{
     padding:2rem;
 }
 
-/*Padding and Margins*/
-.padding-bot-5{
-    padding-bottom: 5rem;
-}
-
-
-
 /*Front Page*/
 .l-front{
     height: calc(100vh - 6rem);
@@ -268,30 +261,40 @@ div{
     margin:auto;
 }
 
-input[type=text], input[type=tel], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
+    input[type=text], input[type=tel], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
 
-  input[type=submit] {
-    background-color: #4b8fe2;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+    input[type=submit] {
+        background-color: #4b8fe2;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #1674e7;
+    }
   
-  input[type=submit]:hover {
-    background-color: #1674e7;
-  }
-  
+
+
+    /*Padding and Margins*/
+    .padding-bot-5{
+        padding-bottom: 5rem;
+    }
+
+    .padding-2{
+        padding:2rem;
+    }
 
 /*************************************************
             States (not directly related to a module)
@@ -342,4 +345,8 @@ input[type=text], input[type=tel], select, textarea {
 }
 .shadow{
     box-shadow: 0px 0px 10px rgb(46, 46, 46, 0.5);
+}
+
+.centered-text{
+    text-align: center;
 }
