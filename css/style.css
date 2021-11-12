@@ -218,6 +218,26 @@ div{
     padding-bottom: 5rem;
 }
 
+
+/*All images and their containers*/
+.imgcontainer{
+    text-align: center;
+    margin:auto;
+    width: 80%;
+}
+
+.imgcontainer img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*desktop versions*/
+@media (min-width: 600px){
+    .imgcontainer{
+        width: 70%;
+    }
+}
+
 /*************************************************
             States (not directly related to a module)
 **************************************************/
