@@ -44,7 +44,7 @@
         <h2 class="centered-text padding-2">Business Signup</h2>
         <p class="centered-text padding-2">Sentence or two explaining what this form does for businesses...</p>
 
-        <form class="form" action="feedback_email.php">
+        <form enctype='multipart/form-data' class="form" method="POST" action="../php/business-email.php">
 
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -58,8 +58,8 @@
             <label for="email">Email</label>
             <input type="text" id="email" name="email" placeholder="Your email address..">
 
-            <label for="businessname">Business Name</label>
-            <input type="text" id="businessname" name="businessname" placeholder="Your business's name..">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" placeholder="Your business's name..">
         
             <input type="submit" value="Sign Up">
         
