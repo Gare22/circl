@@ -7,7 +7,7 @@
 
     $formemail = "GTallent@cascadespares.com";
 
-    echo($firstname . "<br>" . $lastname . "<br>" . $phone . "<br>" . $email . "<br>" . $business);
+    echo($firstname . "<br>" . $lastname . "<br>" . $phone . "<br>" . $useremail . "<br>" . $business);
 
 
     //login to email
