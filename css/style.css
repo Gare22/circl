@@ -267,6 +267,8 @@ div{
     }
 }
 
+
+/*Forms*/
 .form{
     width: min(90%, 769px);
     margin:auto;
@@ -296,6 +298,41 @@ input[type=submit]:hover {
     background-color: #1674e7;
 }
 
+/*Short Fade in and Out Class*/
+@keyframes fade {
+    0%   { opacity:0; }
+    50% { opacity:1; }
+    100%   { opacity:0; }
+}
+@-o-keyframes fade{
+    0%   { opacity:0; }
+    50% { opacity:1; }
+    100%   { opacity:0; }
+}
+@-moz-keyframes fade{
+    0%   { opacity:0; }
+    50% { opacity:1; }
+    100%   { opacity:0; }
+}
+@-webkit-keyframes fade{
+    0%   { opacity:0; }
+    50% { opacity:1; }
+    100%   { opacity:0; }
+}
+.fade {
+
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+  -moz-animation-fill-mode: forwards;    /* FF 5+ */
+  -o-animation-fill-mode: forwards;      /* Not implemented yet */
+  -ms-animation-fill-mode: forwards;     /* IE 10+ */
+  animation-fill-mode: forwards;         /* When the spec is finished */
+
+    -webkit-animation: fade 5s;
+    -moz-animation: fade 5s;
+    -o-animation: fade 5s;
+    animation: fade 5s;
+}
+  
 
 
 /*Padding and Margins*/

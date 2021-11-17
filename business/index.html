@@ -62,7 +62,7 @@
             <input type="text" id="business" name="business" placeholder="Your business's name..">
         
             <input type="submit" value="Sign Up" >
-        
+            <div id="form-confirm" class="form-confirmation fade"><p>Signed up successfully!</p></div>
           </form>
     </div>
     <div id="footer" class="l-foot foot-theme">   
@@ -82,4 +82,12 @@ function mobileMenu() {
     }
 }
 </script>
+
+<script>
+    function formConfirm() {
+        var x = document.getElementById("form-confirm");
+        x.className += " fade";
+        
+    }
+    </script>
 </html>
