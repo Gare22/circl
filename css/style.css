@@ -298,7 +298,7 @@ input[type=submit]:hover {
     background-color: #1674e7;
 }
 
-/*Short fade-in-out in and Out Class*/
+/*Short fade in and fade out animation*/
 @keyframes fade-in-out {
     0%   { opacity:0; }
     50% { opacity:1; }
@@ -319,19 +319,16 @@ input[type=submit]:hover {
     50% { opacity:1; }
     100%   { opacity:0; }
 }
-.fade-in-out {
-    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-    -moz-animation-fill-mode: forwards;    /* FF 5+ */
-    -o-animation-fill-mode: forwards;      /* Not implemented yet */
-    -ms-animation-fill-mode: forwards;     /* IE 10+ */
-    animation-fill-mode: forwards;         /* When the spec is finished */
 
+/*Fade in and fade out class*/
+.fade-in-out {
     -webkit-animation: fade-in-out 5s;
     -moz-animation: fade-in-out 5s;
     -o-animation: fade-in-out 5s;
     animation: fade-in-out 5s;
 }
 
+/*Invisible for fade animations*/
 .invisible{
     opacity:0;
 }
