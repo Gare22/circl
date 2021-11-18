@@ -172,25 +172,10 @@ div{
 }
 
 /*Download Buttons*/
-.l-downloadbuttons{
-    width: 100%;
-    display: flex;
-    gap:6%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
 .downloadbutton{
     height: 10vw;
     width: auto;
     margin:auto;
-}
-
-.downloadbutton img{
-    text-align: center;
-    margin:auto;
-    height: inherit;
 }
 
 
