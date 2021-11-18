@@ -63,7 +63,7 @@ div{
     background-color: #4b8fe2;
     color:whitesmoke;
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 20% 60% 1fr;
     grid-template-rows: 7rem;
 }
 
