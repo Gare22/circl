@@ -34,7 +34,7 @@ p, h1, h2, h3, h4, h5{
 }
 
 a:hover{
-    color:rgb(240, 240, 240);
+    color:rgb(136, 136, 136);
 }
 
 
@@ -60,8 +60,6 @@ div{
     left:0;
     min-height: 6rem;
     width: 100%;
-    background-color: #4b8fe2;
-    color:whitesmoke;
     display: grid;
     grid-template-columns: 20% 60% 1fr;
     grid-template-rows: 7rem;
@@ -78,12 +76,12 @@ div{
 }
 
 .mobile-nav-button i{
-    color:whitesmoke;
+  
     font-size:5rem;
 }
 
 .l-nav-links.mobilebutton-is-pressed{
-    grid-column: span 2;
+    grid-column: span 3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -91,12 +89,7 @@ div{
 }
 .l-nav-links a{
     padding:2rem;
-    color: whitesmoke;
     min-height: 6rem;
-}
-
-.l-nav-links a:hover{
-    color:rgb(240, 240, 240);
 }
 
 .l-nav-links a.is-active{
@@ -105,29 +98,18 @@ div{
 }
 
 @media (min-width:769px) {
-    .l-navbar{
-        color:#4b8fe2;
-    }
-    
     .is-mobile{
         display:none;
     }
     
     .mobile-nav-button{
-    
         display:none;
     }
 
     .l-nav-links a{
-        color:rgb(97, 97, 97);
         text-decoration: underline 0.15em rgba(0, 0, 0, 0);
         transition: text-decoration-color 600ms, color 600ms;
         padding-left:4rem;
-    }
-
-    .l-nav-links a:hover{
-        color:#4b8fe2;
-        text-decoration-color:#4b8fe2;
     }
     
     .l-nav-links a.is-active{
@@ -172,10 +154,9 @@ div{
 }
 
 /*Download Buttons*/
-.downloadbutton{
-    height: 10vw;
-    width: auto;
-    margin:auto;
+.download-button{
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -356,12 +337,16 @@ input[type=submit]:hover {
             Themes
 **************************************************/
 .nav-theme{
-    background-color: #3276C9;
+    background-color: whitesmoke;
+    color:rgb(43, 43, 43);
+}
+
+.nav-theme a{
+    color: rgb(43, 43, 43);
 }
 
 .front-theme{
-    color:whitesmoke;
-    background-color: #3276C9;
+    color:rgb(43, 43, 43);
     background-image: url("../images/front.png");
 }
 
@@ -381,10 +366,20 @@ input[type=submit]:hover {
     color:#b7d894;
 }
 
+.button-theme{
+    background-color:#b7d894;
+    border-radius: 10rem;
+}
+
 @media (min-width:769px) {
     .nav-theme{
         background-color: whitesmoke;
         box-shadow: 0px 0px 10px rgb(46, 46, 46, 0.5);
+    }
+
+    .nav-theme a:hover{
+        color:#b7d894;
+        text-decoration-color:#b7d894;
     }
 }
 .shadow{
