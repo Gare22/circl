@@ -76,7 +76,6 @@ div{
 }
 
 .mobile-nav-button i{
-  
     font-size:5rem;
 }
 
@@ -85,7 +84,6 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #4b8fe2;
 }
 .l-nav-links a{
     padding:2rem;
