@@ -24,7 +24,7 @@ p, img, a, body{
 }
 
 a{
-    color:#252525;
+    color:#000000;
     text-decoration: none;
 }
 
@@ -61,29 +61,33 @@ div{
     min-height: 6rem;
     width: 100%;
     display: grid;
-    grid-template-columns: 20% 60% 1fr;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: 7rem;
+    text-align: center;
 }
 
 .l-nav-links{
     display:none;
+    position: fixed;
+    top:7rem;
+    width: 100%;
+    height: calc(100% - 7rem);
+    background-color: whitesmoke;
 }
 
 .mobile-nav-button{
-    justify-self:right;
     align-self: center;
-    padding-right: 2rem;
 }
 
 .mobile-nav-button i{
-    font-size:5rem;
+    font-size:2.4rem;
 }
 
 .l-nav-links.mobilebutton-is-pressed{
     grid-column: span 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 1.5rem;
 }
 .l-nav-links a{
     padding:2rem;
@@ -91,11 +95,30 @@ div{
 }
 
 .l-nav-links a.is-active{
-    color:rgb(97, 97, 97);
+    color:#000000;
     background-color: #b7d894;
 }
 
+.l-navbar .logo{
+    height: 60%;
+    align-self: center;
+}
+
+.logo img{
+    max-height: 100%;
+}
+
+.l-download-link{
+    width: 100%;
+    align-self: center;
+    text-align: left;
+}
+
 @media (min-width:769px) {
+    .l-navbar{
+        grid-template-columns: 25% 50% 25%;
+    }
+    
     .is-mobile{
         display:none;
     }
@@ -118,7 +141,6 @@ div{
     .l-nav-links, .l-nav-links.mobilebutton-is-pressed{
         display: flex;
         justify-content: right;
-        padding-right:10rem;
     }
 }
 
@@ -267,7 +289,7 @@ input[type=submit]:hover {
 .form-confirmation{
     float:right;
     background-color: #b7d894;
-    color:#272727;
+    color:#000000;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -338,15 +360,15 @@ input[type=submit]:hover {
 **************************************************/
 .nav-theme{
     background-color: whitesmoke;
-    color:rgb(43, 43, 43);
+    color:#000000;
 }
 
 .nav-theme a{
-    color: rgb(43, 43, 43);
+    color:#000000;
 }
 
 .front-theme{
-    color:rgb(43, 43, 43);
+    color:#000000;
     background-image: url("../images/front.png");
 }
 
@@ -359,7 +381,7 @@ input[type=submit]:hover {
 }
 
 .foot-theme a{
-    color:rgb(97, 97, 97, 0.5);
+    color:#000000;
 }
 
 .foot-theme a:hover{
@@ -374,7 +396,6 @@ input[type=submit]:hover {
 @media (min-width:769px) {
     .nav-theme{
         background-color: whitesmoke;
-        box-shadow: 0px 0px 10px rgb(46, 46, 46, 0.5);
     }
 
     .nav-theme a:hover{
@@ -382,10 +403,22 @@ input[type=submit]:hover {
         text-decoration-color:#b7d894;
     }
 }
+/*shadow temporarily disabled
 .shadow{
     box-shadow: 0px 0px 10px rgb(46, 46, 46, 0.5);
 }
+*/
 
 .centered-text{
     text-align: center;
+}
+
+
+/*Center stuff vertically inside of div element*/
+.v-centered-in-div{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
