@@ -23,10 +23,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="l-navbar nav-theme">
+    <div class="l-navbar nav-theme montserrat">
         <div class="mobile-nav-button is-mobile">
             <a href="javascript:void(0);" onclick="mobileMenu()">
                 <i class="fa fa-bars"></i>
+                <i class="fas fa-times is-mobile is-desktop"></i>
             </a> 
         </div>
         <div class="logo">
@@ -42,19 +43,19 @@
             <a href="./terms">Terms</a>
             <a href="./privacy">Privacy</a>
             <a href="./contact/">Contact Us</a> 
-            <a href="" class="nav-download-button">Download</a>
+            <a href="" class="nav-download-button is-desktop">Download</a>
         </div>
     </div>
-<div id="front" class="l-front front-theme">
+<div id="front" class="l-front front-theme montserrat">
     <div>
-        <h3>Find your Circl</h3>
+        <h3>Find your Circl.</h3>
         
-        <a href="http://onelink.to/ek4xqr" class=""><div class="download-button button-theme">Download</div></a>
+        <a href="http://onelink.to/ek4xqr" class="is-mobile montserrat"><div class="download-button button-theme margin-top-4">Download</div></a>
         
     </div>   
 </div>
 <div id="body" class="l-body">
-    <div id="features" class="l-features">
+    <div id="features" class="l-features roboto">
         <div class="feature">
             <div class="img-container">
                 <img src="images/demoimg.png">
@@ -80,10 +81,13 @@
                 <h4>Join Circls with your friends</h4> 
             </div>
         </div>
+
+        <button onclick="plusSlides(-1)">Left</button>
+        <button onclick="plusSlides(1)">Right</button>
     </div>
-    <a href="http://onelink.to/ek4xqr" class=""><div class="download-button button-theme">Download</div></a>
+    <a href="http://onelink.to/ek4xqr" class="montserrat"><div class="download-button button-theme">Download</div></a>
 </div>
-<div id="footer" class="l-foot foot-theme">   
+<div id="footer" class="l-foot foot-theme montserrat">   
     <a href="./terms">Businesses</a>
     <a href="./privacy">Privacy</a>
     <a href="./terms">Terms</a>
@@ -104,6 +108,7 @@
     
 </script>
 
+<!--Scrolling Shadow script (for when you scroll down, the shadow shows...)-->
 <script>
     window.addEventListener('scroll',(e)=>{
       const nav = document.querySelector('.nav-theme');
@@ -113,6 +118,36 @@
         nav.classList.remove("shadow");
       }
     });
-  </script>
+</script>
+
+<!--Features/Screenshots slideshow module script-->
+<script>
+    var slideIndex = 1;
+    showSlide(slideIndex);
+
+    function plusSlides(n){
+        showSlide(slideIndex += n);
+    }
+
+    function showSlide(n){
+        var i;
+        var slides = document.getElementsByClassName("feature");
+
+        /* If you want the slideshow to loop at the end, use this code
+        if (n > slides.length) {slideIndex = 1};
+        if (n < 1) {slideIndex = slides.length}
+        */
+
+        //if you don't want the slideshow to loop at the end, use this code
+        if (n > slides.length) {slideIndex = slides.length};
+        if (n < 1) {slideIndex = 1}
+
+        for (i = 0; i<slides.length; i++){
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
 
 </html>
