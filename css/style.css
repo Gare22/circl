@@ -184,6 +184,10 @@ div{
     margin: auto;
 }
 
+.front-screenshot{
+    float:left;
+}
+
 /*Download Buttons*/
 .download-button{
     font-size: 2.6rem;
