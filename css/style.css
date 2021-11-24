@@ -42,6 +42,10 @@ div{
     box-sizing: border-box;
 }
 
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
 
 @media (min-width: 769px){
     p, a, img{
@@ -186,6 +190,7 @@ div{
 
 .front-screenshot{
     float:left;
+    width: 30%;
 }
 
 /*Download Buttons*/
@@ -194,6 +199,28 @@ div{
     text-align: center;
     width: 16rem;
     margin:auto;
+}
+
+/*Download Buttons*/
+.l-appstore-buttons{
+    width: 50%;
+    display: flex;
+    gap:6%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.appstore-button{
+    height: 4vw;
+    width: auto;
+    margin:auto;
+}
+
+.appstore-button img{
+    text-align: center;
+    margin:auto;
+    height: inherit;
 }
 
 
@@ -215,14 +242,11 @@ div{
 }
 .feature{
     width: 100%;
+    height: 100%;
     display:flex;
     justify-items: space-around;
     justify-content: center;
     padding:5rem;
-}
-
-.feature:nth-child(even){
-    flex-direction: row-reverse;
 }
 
 .feature > .feature-desc{
@@ -233,18 +257,6 @@ div{
 }
 
 .feature > .img-container{
-    width: 60%;
-}
-
-@media (min-width: 769px){
-    .l-features{
-        width: min(90%, 769px);
-    }
-}
-
-/*All images and their containers*/
-.img-container{
-    text-align: center;
     margin:auto;
     width: 80%;
 }
@@ -255,8 +267,8 @@ div{
 }
 
 @media (min-width: 769px){
-    .img-container{
-        width: 70%;
+    .l-features{
+        width: min(90%, 769px);
     }
 }
 
@@ -317,6 +329,25 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #1674e7;
+}
+
+.phone-form{
+    display: flex;
+}
+
+.phone-form input[type=tel]{
+    width: 40%;
+}
+
+.phone-form input[type=text]{
+    width: 15%;
+}
+
+.phone-form input[type=submit]{
+    width: 25%;
+    background-color: #b7d894;
+    border-radius: 2rem;
+    color: black;
 }
 
 .form-confirmation{
