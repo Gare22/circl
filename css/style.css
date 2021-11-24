@@ -9,6 +9,7 @@ Description: Main style sheet for circl landing page. Attempts to follow
 **************************************************/
 html{
     font-size:10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body{
@@ -413,6 +414,7 @@ input[type=submit]:hover {
 .nav-theme{
     background-color: white;
     color:#000000;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-theme a{
@@ -433,10 +435,12 @@ input[type=submit]:hover {
 }
 
 .foot-theme{
+    font-family: 'Montserrat', sans-serif;
     background-color: whitesmoke;
 }
 
 .foot-theme a{
+    font-family: 'Montserrat', sans-serif;
     color:#000000;
 }
 
