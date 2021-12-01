@@ -26,6 +26,7 @@ p, img, a, body{
 a{
     color:#000000;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 p, h1, h2, h3, h4, h5{
@@ -195,10 +196,11 @@ img{
 
 /*Download Buttons*/
 .download-button{
-    font-size: 2.6rem;
+    font-size: 2rem;
     text-align: center;
     width: 16rem;
     margin:auto;
+    padding:1.2rem;
 }
 
 /*Download Buttons*/
@@ -516,4 +518,8 @@ input[type=submit]:hover {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.is-hidden{
+    display: none;
 }
