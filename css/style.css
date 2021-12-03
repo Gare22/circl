@@ -205,6 +205,11 @@ img{
     padding:1.2rem;
 }
 
+.download-button-a{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 /*Download Buttons*/
 .l-appstore-buttons{
     width: 50%;
@@ -283,6 +288,7 @@ img{
 .feature > .img-container{
     margin:auto;
     width: 80%;
+    height: 40rem;
 }
 
 .img-container img{
