@@ -66,9 +66,8 @@ img{
     min-height: 4rem;
     width: 100%;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 30% 40% 30%;
     grid-template-rows: 4rem;
-    text-align: center;
 }
 
 .l-nav-links{
@@ -82,6 +81,7 @@ img{
 
 .mobile-nav-button{
     align-self: center;
+    padding-left:1rem;
 }
 
 .mobile-nav-button i{
@@ -108,6 +108,7 @@ img{
 .l-navbar .logo{
     height: 60%;
     align-self: center;
+    text-align: center;
 }
 
 .logo img{
@@ -116,8 +117,9 @@ img{
 
 .l-download-link{
     width: 100%;
+    padding-right: 1rem;
     align-self: center;
-    text-align: left;
+    text-align: right;
 }
 
 .is-desktop{
@@ -127,6 +129,7 @@ img{
 @media (min-width:769px) {
     .l-navbar{
         grid-template-columns: 25% 50% 25%;
+        text-align: center;
     }
     
     .l-nav-links{
@@ -247,7 +250,7 @@ img{
     align-self: center;
     height: 100%;
     width: 100%;
-    padding:2rem;
+    padding:5rem;
 }
 
 .l-features > button{
@@ -260,10 +263,19 @@ img{
     margin-left:2rem;
 }
 
-.l-features > button > i{
+.l-features > button > .fa-chevron-left{
     position: absolute;
     top:20%;
-    left:29%;
+    left:23%;
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+}
+
+.l-features > button > .fa-chevron-right{
+    position: absolute;
+    top:20%;
+    left:35%;
     font-size: 3rem;
     color:white;
     text-align: center;
@@ -275,17 +287,20 @@ img{
     display:flex;
     justify-items: space-around;
     justify-content: center;
-    padding:5rem;
+    padding:2rem;
+    text-align: center;
 }
 
 .feature > .feature-desc{
     display: flex;
     flex-direction: column;
     justify-content: left;
+    min-height: 6rem;
     width:100%;
 }
 
 .feature > .img-container{
+    align-content: center;
     margin:auto;
     width: 80%;
     height: 40rem;
@@ -299,7 +314,14 @@ img{
 @media (min-width: 769px){
     .l-features{
         width: min(90%, 769px);
+        height:50%;
     }
+
+    .feature > .feature-desc{
+        padding-top:1rem;
+        font-size: 2.2rem;
+    }
+    
 }
 
 /*Footer*/

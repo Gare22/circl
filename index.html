@@ -87,7 +87,7 @@
             </div>
             <div class="feature-desc">
                 <h4>See who’s free to hang 
-                    right now. </h4>
+                    right now </h4>
             </div>
         </div>
         <div class="feature">
@@ -100,15 +100,14 @@
         </div>
         <div class="feature">
             <div class="img-container">
-                <img src="images/demoimg.png">
+                <img src="images/google-play-badge.png">
             </div>
             <div class="feature-desc">
                 <h4>Join Circls with your friends</h4> 
             </div>
         </div>
-
-        <button onclick="plusSlides(-1)"><i class="fa fa-chevron-left"></i></button>
-        <button onclick="plusSlides(1)"><i class="fa fa-chevron-right"></i></button>
+        <button id="gallery-button-left" onclick="plusSlides(-1)" class="gallery-button"><i class="fa fa-chevron-left"></i></button>
+        <button id="gallery-button-right" onclick="plusSlides(1)" class="gallery-button"><i class="fa fa-chevron-right"></i></button>
         <div class="gallery-counter">
             
         </div>
@@ -126,10 +125,21 @@
 <script>
     function mobileMenu() {
         var x = document.getElementById("navlinks");
+        //Hide the absolute gallery buttons also
+        var y = document.getElementById("gallery-button-left");
+        var z = document.getElementById("gallery-button-right");
         if (x.className === "l-nav-links") {
+            //Add the mobile menu
             x.className += " mobilebutton-is-pressed";
+            //Hide the absolute gallery buttons also
+            y.style.display = "none";
+            z.style.display = "none";
         } else {
+            //Hide the mobile menu
             x.className = "l-nav-links";
+            //Redisplay the gallery buttons
+            y.style.display = "inline-block";
+            z.style.display = "inline-block";
         }
     }
 
