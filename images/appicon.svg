@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="176px" height="176px" viewBox="0 0 176 176" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M88 0C39.3989 0 0 39.3989 0 88C0 136.601 39.3989 176 88 176C136.601 176 176 136.601 176 88L127 88C127 109.539 109.539 127 88 127C66.4609 127 49 109.539 49 88C49 66.4609 66.4609 49 88 49L88 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Circl-Logo-Black-Copy-2">
+    <g id="Group-2-Copy-2">
+      <g id="Combined-Shape">
+        <g clip-path="url(#clip_1)">
+          <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="98" />
+        </g>
+      </g>
+      <path d="M149 54C163.912 54 176 41.9117 176 27C176 12.0883 163.912 0 149 0C134.088 0 122 12.0883 122 27C122 41.9117 134.088 54 149 54Z" id="Oval-Copy" fill="#B7D894" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
