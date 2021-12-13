@@ -49,9 +49,8 @@
     </div>
     <div class="l-body l-contact">
         <h2 class="centered-text padding-2">Contact Us</h2>
-        <p class="centered-text padding-2">Sentence or two explaining why the user should contact us...(Not sure if this is needed)</p>
 
-        <form class="form" action="feedback_email.php">
+        <form class="form" action="feedback_email.php" onsubmit="return confirm('Are you sure you want to submit?');">
 
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -75,8 +74,8 @@
             <label for="subject">Give Us Feedback</label>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         
-            <input type="submit" value="Submit">
-        
+            <input type="submit" class="montserrat" value="Submit" onclick="formConfirm()">
+            <div id="form-confirm" class="invisible form-confirmation" ><p>Thank you for your feedback!</p></div>
           </form>
     </div>
     <div id="footer" class="l-foot foot-theme">   
@@ -97,4 +96,13 @@ function mobileMenu() {
     }
 }
 </script>
+
+<!--Thank you popup-->
+<script>
+    function formConfirm() {
+        var x = document.getElementById("form-confirm");
+        x.className += " fade-in-out"; 
+    }
+</script>
+
 </html>
