@@ -1,24 +1,55 @@
 <?php 
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
 
 if(isset($_POST['submit'])){
+    
+    //Code pulled from PHP Mailer readme.md
+    try {
+        //Server settings
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->Host       = 'smtp.live.com';                     //Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        $mail->Username   = 'user@example.com';                     //SMTP username
+        $mail->Password   = 'secret';                               //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    
+        //Recipients
+        $mail->setFrom($_POST['email'], $_POST['first_name']);
+        $mail->addAddress('fake@gmail.com', 'Fake');//Add a recipient
+        $mail->addAddress('notfake@yahoo.com');//Name is optional
+        $mail->addReplyTo('dawson@gmail.com', 'Circl');
+        $mail->addCC('cc@example.com');
+        $mail->addBCC('bcc@example.com');
+    
+        
+        /* (Commented out in case we want to use later) - Gare
+        //Attachments
+        $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+        $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+        */
 
-    $mailserver = '{imap-mail.outlook.com:993/ssl/novalidate-cert}';
-    $to = "example@email.com"; // this is your Email address
-    $password = "password";
-    
-    
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    echo "<script>console.log('".$first_name."');</script>"; //debug console log
-    
-    $subject = "Form submission";//Subject line
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['business']; //actual message
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'Here is the subject';
+        $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+        $mail->send();
+        echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
     }
 ?>
