@@ -52,13 +52,13 @@
     <div class="l-body l-business">
         <h2 class="centered-text padding-2">Partner with Circl</h2>
 
-        <form class="form" method="POST" action="../php/business-email.php" onsubmit="return confirm('Are you sure you want to submit?');">
+        <form class="form" method="POST" action="../php/business-email.php" target="email-frame">
 
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="first_name" placeholder="Your name..">
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="last_name" placeholder="Your last name..">
 
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" placeholder="(123)456-7890">
@@ -69,9 +69,14 @@
             <label for="business">Business Name</label>
             <input type="text" id="business" name="business" placeholder="Your business's name..">
         
-            <input type="submit" class="montserrat" value="Sign Up" onclick="formConfirm()">
+            <input type="submit" name="submit" class="montserrat" value="Sign Up" onclick="formConfirm()">
             <div id="form-confirm" class="invisible form-confirmation" ><p>An email has been sent to our team! We will respond to your email with more details.</p></div>
           </form>
+    </div>
+    <div id="invisble-iframe">
+        <iframe id="email-frame" name="email-frame" >
+
+        </iframe>
     </div>
     <div id="footer" class="l-foot foot-theme">   
         <a href="./">Businesses</a>
