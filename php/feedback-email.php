@@ -31,13 +31,13 @@ if(isset($_POST['submit'])){
         $mail->Host = 'smtp.gmail.com';//Set the SMTP server to send through
 
         //Email address and password
-        $mail->Username = 'fake@fake.com';//email address you'll be sending from
-        $mail->Password = 'fakepassword';//password of above email address
+        $mail->Username = 'Fake@gmail.com';//email address you'll be sending from
+        $mail->Password = 'Fake';//password of above email address
         
     
         //Recipients
-        $mail->setFrom('fake@from.com', 'Circl');
-        $mail->addAddress('fake@receiver.com', 'Fake');//Address of where we want to receive our contact forms
+        $mail->setFrom('Fake@gmail.com', 'Circl');
+        $mail->addAddress('Fake@Fake.com', 'Fake');//Address of where we want to receive our contact forms
         $mail->addReplyTo($email, $first_name);
         
         //$mail->addCC('cc@example.com');
@@ -52,9 +52,9 @@ if(isset($_POST['submit'])){
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = $first_name . ' ' . $last_name . ' has feedback for us.';
-        $mail->Body    = '<b>' . $first_name . ' ' . $last_name . '</b> has given us feedback. <br>Contact them at ' . $email . ' or phone number ' . $phone . '.<br> Their feedback says ' . $message;
-        $mail->AltBody = $first_name . ' ' . $last_name . ' has given us feedback. Contact them at ' . $email . ' or phone number ' . $phone . '. Their feedback says ' . $message;
+        $mail->Subject = '' . $first_name . ' ' . $last_name . ' has feedback for us.';
+        $mail->Body    = '<b>' . $first_name . ' ' . $last_name . '</b> has given us feedback. <br>Contact them at ' . $email . ' or phone number ' . $phone . '.<br> Their feedback says: <br><b>' . $message . '</b>';
+        $mail->AltBody = $first_name . ' ' . $last_name . ' has given us feedback. Contact them at ' . $email . ' or phone number ' . $phone . '. Their feedback says: ' . $message;
 
         $mail->send();
         echo 'Message has been sent';
