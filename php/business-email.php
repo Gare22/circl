@@ -13,25 +13,35 @@ $mail = new PHPMailer(true);
 
 if(isset($_POST['submit'])){
     
+    //All POST variabls
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $business = $_POST['business'];
+
     //Code pulled from PHP Mailer readme.md
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.live.com';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'user@example.com';                     //SMTP username
-        $mail->Password   = 'secret';                               //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-        $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->SMTPDebug = 2;//Enable verbose debug output
+        $mail->isSMTP();//Send using SMTP
+        $mail->SMTPAuth = true;//Enable SMTP authentication
+        $mail->SMTPSecure = 'tls';//Enable implicit TLS encryption
+        $mail->Port = 587;//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->Host = 'smtp.gmail.com';//Set the SMTP server to send through
+
+        //Email address and password
+        $mail->Username = 'fake@fake.com';//email address you'll be sending from
+        $mail->Password = 'fakepassword';//password of above email address
+        
     
         //Recipients
-        $mail->setFrom($_POST['email'], $_POST['first_name']);
-        $mail->addAddress('fake@gmail.com', 'Fake');//Add a recipient
-        $mail->addAddress('notfake@yahoo.com');//Name is optional
-        $mail->addReplyTo('dawson@gmail.com', 'Circl');
-        $mail->addCC('cc@example.com');
-        $mail->addBCC('bcc@example.com');
+        $mail->setFrom('support@circl.com', 'Circl');
+        $mail->addAddress('support@circl.com', 'Circl - Support');//Address of where we want to receive our contact forms
+        $mail->addReplyTo($email, $business);
+        
+        //$mail->addCC('cc@example.com');
+        //$mail->addBCC('bcc@example.com');
     
         
         /* (Commented out in case we want to use later) - Gare
@@ -42,9 +52,9 @@ if(isset($_POST['submit'])){
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Here is the subject';
-        $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->Subject = $business . ' would like to sign up';
+        $mail->Body    = '<b>' . $business . '</b> would like to sign up. <br>Contact them through ' . $first_name .' '. $last_name .' at ' . $email . ' or phone number ' . $phone . '.';
+        $mail->AltBody = $business . ' would like to sign up. Contact them through ' . $first_name .' '. $last_name .' at ' . $email . ' or phone number ' . $phone . '.';
 
         $mail->send();
         echo 'Message has been sent';
