@@ -50,13 +50,13 @@
     <div class="l-body l-contact">
         <h2 class="centered-text padding-2">Contact Us</h2>
 
-        <form class="form" action="feedback_email.php" onsubmit="return confirm('Are you sure you want to submit?');">
+        <form class="form" method="POST" action="../php/feedback_email.php" target="email-frame">
 
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="first_name" placeholder="Your name..">
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="last_name" placeholder="Your last name..">
 
             <label for="email">Email</label>
             <input type="text" id="email" name="email" placeholder="Your email address..">
@@ -71,12 +71,17 @@
               <option value="usa">USA</option>
             </select>
         
-            <label for="subject">Give Us Feedback</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="message">Give Us Feedback</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
         
-            <input type="submit" class="montserrat" value="Submit" onclick="formConfirm()">
+            <input type="submit" name="submit" class="montserrat" value="Submit" onclick="formConfirm()">
             <div id="form-confirm" class="invisible form-confirmation" ><p>Thank you for your feedback!</p></div>
           </form>
+    </div>
+    <div id="invisible-iframe">
+        <iframe id="email-frame" name="email-frame" >
+
+        </iframe>
     </div>
     <div id="footer" class="l-foot foot-theme">   
         <a href="../business">Businesses</a>
