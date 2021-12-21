@@ -49,13 +49,16 @@
 <div id="front" class="l-front front-theme montserrat">
     <div>
         <div class="l-front-screenshot is-desktop">
-            <img src="./images/demoimg.png">
+            <div style="width: 80%">
+                <img src="./images/demoimg.png">
+            </div>
         </div>
         <div class="l-front-right">
-            <h3>Find your Cir<img class="svg-icon" src="images/appicon.svg">l.</h3>
+            <h3 class="is-mobile">Find your <div>Cir<img class="svg-icon" src="images/appicon.svg">l.</div></h3>
+            <h3 class="is-desktop" style="text-align: left;">Find your Cir<img class="svg-icon" src="images/appicon.svg">l.</h3>
             <a href="http://onelink.to/ek4xqr" class="is-mobile montserrat"><div class="download-button button-theme margin-top-4">Download</div></a>
             
-            <div class="is-desktop">
+            <div class="is-desktop" style="height: 30vh;">
                 <div class="l-appstore-buttons">
                     <a href="https://www.apple.com/" class="appstore-button">
                         <img src="images/app-store-badge.png" alt="apple icon">
@@ -69,13 +72,13 @@
     </div>   
 </div>
 <div id="body" class="l-body">
-    <div id="features" class="l-features roboto">
+    <div id="features" class="l-features montserrat">
         <div class="feature">
             <div class="img-container">
                 <img src="images/demoimg.png">
             </div>
             <div class="feature-desc">
-                <h4>See who’s free to hang 
+                <h4 >See who’s free to hang 
                     right now </h4>
             </div>
         </div>
@@ -84,7 +87,7 @@
                 <img src="images/demoimg.png">
             </div>
             <div class="feature-desc">
-                <h4>Make plans easier than ever</h4>  
+                <h4 >Make plans easier than ever</h4>  
             </div>
         </div>
         <div class="feature">
@@ -92,13 +95,19 @@
                 <img src="images/demoimg.png">
             </div>
             <div class="feature-desc">
-                <h4>Join Circls with your friends</h4> 
+                <h4 >Join Circls with your friends</h4> 
             </div>
         </div>
         <button id="gallery-button-left" onclick="plusSlides(-1)" class="gallery-button"><i class="fa fa-chevron-left"></i></button>
         <button id="gallery-button-right" onclick="plusSlides(1)" class="gallery-button"><i class="fa fa-chevron-right"></i></button>
-        <div class="gallery-counter">
-            
+        <div class="l-gallery-counter">
+            <h4 >01</h4>
+            <div class="gallery-counter-container">
+                <div class="gallery-counter-theme gallery-counter progress-1">
+                    
+                </div>
+            </div>
+            <h4 >03</h4>
         </div>
     </div>
     <a href="http://onelink.to/ek4xqr" class="montserrat download-button-a"><div class="download-button button-theme">Download</div></a>
