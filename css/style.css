@@ -271,12 +271,10 @@ img{
 
 .l-features > button{
     position: relative;
-    background-color: #b7d894;
     border-radius: 100%;
     border: 0px;
     width: 5rem;
     height: 5rem;
-    margin-left:2rem;
 }
 
 .l-features > button > .fa-chevron-left{
@@ -284,8 +282,11 @@ img{
     top:20%;
     left:23%;
     font-size: 3rem;
-    color:white;
     text-align: center;
+}
+
+#gallery-button-right{
+    margin-left:2rem;
 }
 
 .l-features > button > .fa-chevron-right{
@@ -293,7 +294,6 @@ img{
     top:20%;
     left:35%;
     font-size: 3rem;
-    color:white;
     text-align: center;
 }
 
@@ -313,6 +313,8 @@ img{
     justify-content: left;
     min-height: 6rem;
     width:100%;
+    margin-top:1.6rem;
+    font-size: 2.2rem;
 }
 
 .feature > .img-container{
@@ -333,8 +335,8 @@ img{
     }
 
     .feature > .feature-desc{
-        padding-top:1rem;
-        font-size: 2.2rem;
+        margin-top:4rem;
+        font-size: 3.2rem;
     }
     
 }
@@ -356,11 +358,13 @@ img{
 .gallery-counter{
     margin-top:.4rem;
     height: 100%;
-    width: 100%;
+    transition: width 100ms;
 }
 
 @media (min-width: 769px){
-
+    .gallery-counter-container{
+        width: 50%;
+    }
 }
 
 
@@ -567,7 +571,7 @@ input[type=submit]:hover {
 }
 
 .gallery-counter-theme{
-    background-color: #b594d8;
+    background-color: #996E6E;
 }
 
 .foot-theme{
