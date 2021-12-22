@@ -75,7 +75,7 @@ img{
     position: fixed;
     top:4rem;
     width: 100%;
-    height: calc(100% - 4rem);
+    height: 100vh;
     background-color: white;
 }
 
