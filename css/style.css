@@ -402,7 +402,9 @@ img{
     width: min(90%, 769px);
     margin:auto;
 }
-
+label {
+    font-size: 1.4rem;
+}
 input[type=text], input[type=tel], select, textarea {
     width: 100%;
     padding: 12px;
