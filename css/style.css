@@ -341,7 +341,7 @@ img{
     
 }
 
-
+/*gallery*/
 .l-gallery-counter{
     display: flex;
     flex-direction: row;
@@ -350,15 +350,19 @@ img{
 }
 
 .gallery-counter-container{
+    margin: .5rem .9rem 0 .9rem;
     height: 1rem;
     width: 100%;
-    padding: 0 1rem 0 1rem;
+    background-color: rgb(207, 207, 207);
 }
 
 .gallery-counter{
-    margin-top:.4rem;
     height: 100%;
     transition: width 100ms;
+}
+
+#gallery-page{
+    min-width: 2rem;
 }
 
 @media (min-width: 769px){
