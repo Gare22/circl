@@ -23,29 +23,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="l-navbar nav-theme montserrat">
-        <div class="mobile-nav-button is-mobile">
-            <a href="javascript:void(0);" onclick="mobileMenu()">
-                <i class="fa fa-bars"></i>
-                <i class="fas fa-times is-mobile is-desktop"></i>
-            </a> 
-        </div>
-        <div class="logo">
-            <img src="./images/logo.svg" alt="Circl Logo">
-        </div>
-        <div class="is-mobile l-download-link">
-            <a href="http://onelink.to/ek4xqr">Download</a>
-        </div>
-        
-
-        <div id="navlinks" class="l-nav-links">
-            <a href="./business/">Businesses</a>
-            <a href="./terms">Terms</a>
-            <a href="./privacy">Privacy</a>
-            <a href="./contact/">Contact Us</a> 
-            <a href="" class="nav-download-button is-desktop">Download</a>
-        </div>
+<!--Navigation Bar/Top Bar-->
+<div class="l-navbar nav-theme montserrat">
+    <div class="mobile-nav-button is-mobile">
+        <a href="javascript:void(0);" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+            <i class="fas fa-times is-mobile is-desktop"></i>
+        </a> 
     </div>
+    <div class="logo">
+        <img src="./images/logo.svg" alt="Circl Logo">
+    </div>
+    <div class="is-mobile l-download-link">
+        <a href="http://onelink.to/ek4xqr">Download</a>
+    </div>
+    
+
+    <div id="navlinks" class="l-nav-links">
+        <a href="./business/">Businesses</a>
+        <a href="./terms">Terms</a>
+        <a href="./privacy">Privacy</a>
+        <a href="./contact/">Contact Us</a> 
+        <a href="" class="nav-download-button is-desktop">Download</a>
+    </div>
+</div>
+
+<!--Modals (pop-up images or screens)-->
+<div id="apple-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="apple-qr" src="images/apple-qr.png">
+</div>
+
+<div id="android-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="apple-qr" src="images/android-qr.png">
+</div>
+
+<!--Front page (has the logo and slogan, etc.)-->
 <div id="front" class="l-front front-theme montserrat">
     <div>
         <div class="l-front-screenshot is-desktop">
@@ -60,10 +74,10 @@
             
             <div class="is-desktop" style="height: 30vh;">
                 <div class="l-appstore-buttons">
-                    <a href="https://www.apple.com/" class="appstore-button">
+                    <a href="javascript:appleQR()" class="appstore-button">
                         <img src="images/app-store-badge.png" alt="apple icon">
                     </a>
-                    <a href="https://play.google.com/" class="appstore-button">
+                    <a href="javascript:androidQR()" class="appstore-button">
                         <img src="images/google-play-badge.png" alt="play icon">
                     </a>
                 </div>
@@ -71,6 +85,7 @@
         </div>
     </div>   
 </div>
+<!--Body Div - has the feature screenshots-->
 <div id="body" class="l-body">
     <div id="features" class="l-features montserrat">
         <div class="feature">
@@ -111,6 +126,7 @@
         </div>
     </div>
 </div>
+<!--Footer div - just the bottom links-->
 <div id="footer" class="l-foot foot-theme montserrat">   
     <a href="./privacy">Privacy</a>
     <a href="./business">Businesses</a>
@@ -183,6 +199,36 @@
         
         //If you don't want the slider/counter at the bottom, remove this line
         updateCounter(slideIndex);
+    }
+</script>
+
+<!--Modal Scripts-->
+<script>
+    function appleQR(){
+        // Get the modal
+        var modal = document.getElementById("apple-modal");
+        modal.style.display = "block";
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+
+    function androidQR(){
+        // Get the modal
+        var modal = document.getElementById("android-modal");
+        //Make the modal visible
+        modal.style.display = "block";
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[1];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
     }
 </script>
 
