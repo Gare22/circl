@@ -1,7 +1,7 @@
 /*Circl - style.css
 Author: Garrett Tallent
 Description: Main style sheet for circl landing page. Attempts to follow 
-            SMACSS guidelines: (Base)Elements, Layouts, Modules, States, Themes. 
+            SMACSS guidelines: (Base)Elements, Layouts (indicated by l-selector), Modules, States (indicated by is-selector), Themes. 
             
 
 /*************************************************

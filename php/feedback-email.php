@@ -1,4 +1,8 @@
-<?php 
+<?php
+//feedback-email.php
+//description: Obtains contact us form information via post HTTP method then sends 
+//     email with PHPMailer (https://github.com/PHPMailer/PHPMailer) via gmail account to Dawson
+
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;

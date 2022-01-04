@@ -1,4 +1,8 @@
 <?php 
+//business-email.php
+//description: Obtains business email form information via post HTTP method then sends 
+//     email with PHPMailer (https://github.com/PHPMailer/PHPMailer) via gmail account to Dawson
+
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -20,7 +24,7 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $business = $_POST['business'];
 
-    //Code pulled from PHP Mailer readme.md
+    //Code pulled from PHP Mailer readme.md (https://github.com/PHPMailer/PHPMailer)
     try {
         //Server settings
         $mail->SMTPDebug = 2;//Enable verbose debug output
