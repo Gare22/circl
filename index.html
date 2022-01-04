@@ -136,6 +136,7 @@
 
 <!--Navmenu Script (for mobile button)-->
 <script>
+    //mobileMenu() - displays mobile navbar menu when mobile's nav button is pressed.
     function mobileMenu() {
         var x = document.getElementById("navlinks");
         //Hide the absolute gallery buttons also
@@ -164,10 +165,14 @@
     var slideIndex = 1;
     showSlide(slideIndex);
 
+    //plusSlides(n) - add (or subtract) an amount of slides for the gallery. This function is used by the gallery's next and previous buttons.
     function plusSlides(n){
         showSlide(slideIndex += n);
     }
 
+    //updateCounter(n) - update's the counter and progress bar of the gallery
+    //n - integer valued 1 through 3 representing which slide we are on
+    //prereq - this function should be called after showSlide() to allow rounding math to occur (showSlide determines if the gallery can "loop" or not)
     function updateCounter(n){
         var gallerySlider = document.getElementById("gallery-counter");
         var galleryPage = document.getElementById("gallery-page");
@@ -176,6 +181,7 @@
         galleryPage.innerHTML = "0" + n;
     }
 
+    //showSlide - show the nth screenshot in the gallery.
     function showSlide(n){
         var i;
         var slides = document.getElementsByClassName("feature");
@@ -204,6 +210,7 @@
 
 <!--Modal Scripts-->
 <script>
+    //appleQR - displays the apple QR code as a modal.
     function appleQR(){
         // Get the modal
         var modal = document.getElementById("apple-modal");
@@ -217,6 +224,7 @@
         }
     }
 
+    //androidQR - displays the android QR code as a modal.
     function androidQR(){
         // Get the modal
         var modal = document.getElementById("android-modal");
