@@ -296,11 +296,11 @@ img{
 
 /*Body*/
 .l-body{
-    min-height: 120vh;
+    min-height: 100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10vh;
+    
 }
 
 
@@ -466,11 +466,12 @@ input[type=text], input[type=tel], select, textarea {
 }
 
 input[type=submit] {
+    border: 1px solid rgb(109, 109, 109);
     background-color: #b7d894;
     padding: 12px 20px;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
+    color: rgb(36, 36, 36);
 }
 
 input[type=submit]:hover {
