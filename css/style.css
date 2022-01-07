@@ -469,7 +469,7 @@ img{
 
 /*Forms*/
 .form{
-    width: min(90%, 769px);
+    width: min(60%, 600px);
     margin:auto;
 }
 label {
@@ -491,7 +491,8 @@ input[type=submit] {
     border: 1px solid rgb(109, 109, 109);
     background-color: #b7d894;
     padding: 12px 20px;
-    border-radius: 4px;
+    width: 100%;
+    border-radius: 2rem;
     cursor: pointer;
     color: rgb(36, 36, 36);
 }
