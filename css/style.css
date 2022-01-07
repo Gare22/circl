@@ -478,21 +478,27 @@ img{
     margin:auto;
 }
 label {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 input[type=text], input[type=tel], select, textarea {
     width: 100%;
     padding: 12px;
-    background-color: whitesmoke;
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 3rem;
     resize: vertical;
+    font-size: 1.6rem;
+}
+
+input[type=text]::placeholder, input[type=tel]::placeholder, select::placeholder, textarea::placeholder {
+    color:rgb(175, 175, 175);
 }
 
 input[type=submit] {
+    margin-top:3rem;
     border: 1px solid rgb(109, 109, 109);
     background-color: #b7d894;
     padding: 12px 20px;
@@ -504,25 +510,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #96b871;
-}
-
-.phone-form{
-    display: flex;
-}
-
-.phone-form input[type=tel]{
-    width: 40%;
-}
-
-.phone-form input[type=text]{
-    width: 15%;
-}
-
-.phone-form input[type=submit]{
-    width: 25%;
-    background-color: #b7d894;
-    border-radius: 2rem;
-    color: black;
 }
 
 .form-confirmation{
