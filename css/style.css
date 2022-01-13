@@ -321,6 +321,15 @@ img{
     font-size: 1.5rem;
 }
 
+@media (min-width: 769px){
+        
+    /*Legal documents*/
+    .l-legal{
+        padding: 2rem 2rem 2rem 2rem;
+        margin: auto;
+    }
+}
+
 .l-legal > h1 {
     margin-top:4rem;
     font-size: 2.4rem;
