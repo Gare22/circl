@@ -100,7 +100,7 @@ img{
     gap: 1.5rem;
 }
 .l-nav-links a{
-    padding:.5rem;
+    padding:2rem;
     padding-left: 1rem;
     text-align: left;
 }
@@ -160,6 +160,7 @@ img{
     }
 
     .l-nav-links a{
+        padding: 0.5rem;
         text-decoration: underline 0.15em rgba(0, 0, 0, 0);
         transition: text-decoration-color 600ms, color 600ms;
         font-size: 1.2rem;
