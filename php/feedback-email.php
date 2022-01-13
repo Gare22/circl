@@ -41,7 +41,7 @@ if(isset($_POST['submit'])){
         
     
         //Recipients
-        $mail->setFrom('Fake@gmail.com', 'Circl');
+        $mail->setFrom('VeryFake@gmail.com', 'Circl');
         $mail->addAddress('Fake@Fake.com', 'Fake');//Address of where we want to receive our contact forms
         $mail->addReplyTo($email, $first_name);
         
