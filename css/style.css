@@ -474,9 +474,15 @@ img{
 
 /*Forms*/
 .form{
-    width: min(60%, 600px);
     margin:auto;
 }
+
+@media (min-width:769px) {
+    .form{
+        width: min(60%, 600px);
+    }
+}
+
 label {
     font-size: 1.6rem;
 }
