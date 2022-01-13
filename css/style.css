@@ -105,7 +105,7 @@ img{
     text-align: left;
 }
 
-.l-nav-links a:active{
+.l-nav-links a.is-active{
     color:#000000;
     background-color: #b7d894;
 }
@@ -167,7 +167,7 @@ img{
         padding-right: 1rem;
     }
     
-    .l-nav-links a:active{
+    .l-nav-links a.is-active{
         text-decoration: underline 0.15em;
         background-color: inherit
     }
