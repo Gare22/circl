@@ -312,6 +312,7 @@ img{
 /*Legal documents*/
 .l-legal{
     max-width: 768px;
+    padding: 2rem 2rem 2rem 2rem;
     margin: auto;
 }
 
@@ -325,8 +326,7 @@ img{
         
     /*Legal documents*/
     .l-legal{
-        padding: 2rem 2rem 2rem 2rem;
-        margin: auto;
+        padding: 0;
     }
 }
 
