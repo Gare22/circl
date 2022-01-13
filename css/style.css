@@ -166,6 +166,7 @@ img{
         font-size: 1.2rem;
         align-self: center;
         padding-right: 1rem;
+        padding-left: 1rem;
     }
     
     .l-nav-links a.is-active{
