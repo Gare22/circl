@@ -544,6 +544,7 @@ input[type=submit] {
     border-radius: 2rem;
     cursor: pointer;
     color: rgb(36, 36, 36);
+    z-index: 30;
 }
 
 input[type=submit]:hover {

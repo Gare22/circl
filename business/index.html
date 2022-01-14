@@ -53,7 +53,7 @@
     <div class="l-body l-business">
         <h2 class="centered-text padding-2">Partner with Circl</h2>
 
-        <form name="business-form" class="form" method="POST" action="../php/business-email.php" target="email-frame">
+        <form name="business-form" id="business-form" class="form" method="POST" action="../php/business-email.php" target="email-frame">
 
             <label for="fname">FIRST NAME</label>
             <input type="text" id="fname" name="first_name" placeholder="Your first name...">
@@ -85,7 +85,8 @@
         <a href="../terms">Terms</a>
     </div>
 </body>
-
+<!--Captcha-->
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <!--Navmenu Script (for mobile button)-->
 <script>
 function mobileMenu() {
@@ -95,6 +96,10 @@ function mobileMenu() {
     } else {
         x.className = "l-nav-links";
     }
+}
+
+function onSubmit(token) {
+    document.getElementById("business-form").submit();
 }
 
 //Double submit prevention code pulled from https://www.bram.us/2020/11/04/preventing-double-form-submissions/
