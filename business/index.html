@@ -53,7 +53,7 @@
     <div class="l-body l-business">
         <h2 class="centered-text padding-2">Partner with Circl</h2>
 
-        <form id="myform" class="form" method="POST" action="../php/business-email.php" target="email-frame" onsubmit="formConfirm()">
+        <form name="business-form" class="form" method="POST" action="../php/business-email.php" target="email-frame" onsubmit="formConfirm()">
 
             <label for="fname">FIRST NAME</label>
             <input type="text" id="fname" name="first_name" placeholder="Your first name...">
@@ -106,8 +106,7 @@ function mobileMenu() {
         var myButton = document.getElementById("submitbutton");
         myButton.disabled = true;
         myButton.value = "Please wait...";
-        var myForm = document.getElementById("myform");
-        myForm.submit(); 
+        business-form.submit(); 
     }
 </script>
 </html>
