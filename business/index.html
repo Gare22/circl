@@ -70,7 +70,7 @@
             <label for="business">BUSINESS NAME</label>
             <input type="text" id="business" name="business" placeholder="Your business's name...">
         
-            <input id="submitbutton" type="submit" name="submit" class="montserrat" value="Sign Up">
+            <input id="submitbutton" type="submit" name="submit" class="montserrat" value="Sign Up" onclick="this.form.submit(); this.disabled = true; this.value = 'Submitting the form';">
             <div id="form-confirm" class="invisible form-confirmation" ><p>An email has been sent to our team! We will respond to your email with more details.</p></div>
           </form>
     </div>
@@ -102,11 +102,7 @@ function mobileMenu() {
     //formConfirm() - causes confirmation popup to occur (client side logic only - all form data is handled via php and iframes)
     function formConfirm() {
         var x = document.getElementById("form-confirm");
-        x.className += " fade-in-out";
-        var myButton = document.getElementById("submitbutton");
-        myButton.disabled = true;
-        myButton.value = "Please wait...";
-        document.business-form.submit(); 
+        x.className += " fade-in-out"; 
     }
 </script>
 </html>
