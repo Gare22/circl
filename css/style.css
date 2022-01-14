@@ -486,6 +486,8 @@ img{
 /*Forms*/
 .form{
     margin:auto;
+    width: auto;
+    height: auto;
 }
 
 /*Form submission code pulled from https://www.bram.us/2020/11/04/preventing-double-form-submissions/*/
