@@ -101,9 +101,7 @@ function mobileMenu() {
 <script>
     //formConfirm() - causes confirmation popup to occur (client side logic only - all form data is handled via php and iframes)
     function formConfirm() {
-        var myButton = document.getElementById("submitbutton");
-        myButton.disabled = true;
-        myButton.value = "Please wait...";
+        
         var x = document.getElementById("form-confirm");
         x.className += " fade-in-out"; 
     }
