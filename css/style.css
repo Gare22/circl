@@ -464,14 +464,6 @@ img{
 }
 
 /***Contact and Business Pages Only***/
-.l-contact{
-    padding:2rem;
-}
-
-.l-business{
-    padding:2rem;
-}
-
 @media (min-width: 769px){
     .l-contact{
         padding:10rem;
