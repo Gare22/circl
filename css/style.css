@@ -489,7 +489,7 @@ img{
 }
 
 /*Form submission code pulled from https://www.bram.us/2020/11/04/preventing-double-form-submissions/*/
-form.is-submitting::before {
+form.is-submitting{
     position: absolute;
     content: '';
     top: -0.5em;
@@ -501,7 +501,8 @@ form.is-submitting::before {
 
 @media (min-width:769px) {
     .form{
-        width: min(60%, 600px);
+        padding:5rem;
+        width: min(70%, 700px);
     }
 }
 
