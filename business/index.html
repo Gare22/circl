@@ -53,7 +53,7 @@
     <div class="l-body l-business">
         <h2 class="centered-text padding-2">Partner with Circl</h2>
 
-        <form class="form" method="POST" action="../php/business-email.php" target="email-frame" onsubmit="formConfirm()">
+        <form id="myform" class="form" method="POST" action="../php/business-email.php" target="email-frame" onsubmit="formConfirm()">
 
             <label for="fname">FIRST NAME</label>
             <input type="text" id="fname" name="first_name" placeholder="Your first name...">
@@ -101,11 +101,13 @@ function mobileMenu() {
 <script>
     //formConfirm() - causes confirmation popup to occur (client side logic only - all form data is handled via php and iframes)
     function formConfirm() {
+        var x = document.getElementById("form-confirm");
+        x.className += " fade-in-out";
         var myButton = document.getElementById("submitbutton");
         myButton.disabled = true;
         myButton.value = "Please wait...";
-        var x = document.getElementById("form-confirm");
-        x.className += " fade-in-out"; 
+        var myForm = document.getElementById("myform");
+        myForm.submit(); 
     }
 </script>
 </html>
