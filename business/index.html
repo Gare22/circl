@@ -70,8 +70,7 @@
             <label for="business">BUSINESS NAME</label>
             <input type="text" id="business" name="business" placeholder="Your business's name...">
         
-            <input id="submitbutton" type="submit" name="submit" class="montserrat" value="Sign Up" onclick="this.form.submit(); this.disabled = true; this.value = 'Submitting the form';">
-            <div id="form-confirm" class="invisible form-confirmation" ><p>An email has been sent to our team! We will respond to your email with more details.</p></div>
+            <input id="submitbutton" type="submit" name="submit" class="montserrat" value="Sign Up">
           </form>
     </div>
     <div id="invisible-iframe" class="">
@@ -96,13 +95,28 @@ function mobileMenu() {
         x.className = "l-nav-links";
     }
 }
-</script>
 
-<script>
-    //formConfirm() - causes confirmation popup to occur (client side logic only - all form data is handled via php and iframes)
-    function formConfirm() {
-        var x = document.getElementById("form-confirm");
-        x.className += " fade-in-out"; 
+// Prevent Double Submits
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', (e) => {
+    // Prevent if already submitting
+    if (form.classList.contains('is-submitting')) {
+      e.preventDefault();
+      console.info('Successive submit suppressed');
     }
+    
+    // Add a visual indicator to show the user it is submitting
+    form.classList.add('is-submitting');
+  });
+});
+
+
+// Extra snippet here to also prevent form submissions the first submit
+// as a viewer of this demo would otherwise be guided to outside of CodePen …
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+  });
+});
 </script>
 </html>
