@@ -506,7 +506,7 @@ form .form-submission-cover{
 
 .is-submitting .form-submission-cover{
     display: block;
-    z-index: 10;
+    z-index: 20;
 }
 
 @media (min-width:769px) {
