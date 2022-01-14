@@ -502,7 +502,6 @@ form .form-submission-cover{
 
 form .is-submitting .form-submission-cover{
     display: block;
-    position: absolute;
     top:0;
     left:0;
     z-index: 10;
