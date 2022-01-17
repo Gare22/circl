@@ -71,7 +71,7 @@ img{
     min-height: 4rem;
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 10% 60% 30%;
     grid-template-rows: 4rem;
 }
 
@@ -133,7 +133,7 @@ img{
 
 @media (min-width:769px) {
     .l-navbar{
-        grid-template-columns: 25% 50% 25%;
+        grid-template-columns: 10% 50% 40%;
         text-align: center;
     }
     
