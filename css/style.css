@@ -73,7 +73,7 @@ img{
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 4rem;
-    z-index: 1;
+    z-index: 100;
 }
 
 .l-nav-links{
