@@ -73,6 +73,7 @@ img{
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 4rem;
+    z-index: 1;
 }
 
 .l-nav-links{
@@ -481,7 +482,7 @@ img{
     margin:auto;
     width: 80%;
     padding:0;
-    height: 80%;
+    height: 50%;
 }
 
 /*Form submission code pulled from https://www.bram.us/2020/11/04/preventing-double-form-submissions/*/
