@@ -326,7 +326,9 @@ img{
     color:rgb(43, 43, 43);
     font-size: 1.5rem;
 }
-
+.l-legal ol{
+    margin-top:1rem;
+}
 .l-legal li{
     font-size: 1.5rem;
     color:rgb(43, 43, 43);
