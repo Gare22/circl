@@ -382,6 +382,7 @@ img{
     left:23%;
     font-size: 3rem;
     text-align: center;
+    color:black;
 }
 
 #gallery-button-right{
@@ -394,6 +395,7 @@ img{
     left:35%;
     font-size: 3rem;
     text-align: center;
+    color:black;
 }
 
 .feature{
@@ -421,7 +423,7 @@ img{
     align-content: center;
     margin:auto;
     width: 80%;
-    height: 50vh;
+    height: 60vh;
 }
 
 .img-container img{
